@@ -1,0 +1,1 @@
+{"name": "toolhub", "version": "1.0.0", "scripts": {"build": "python build.py"}}
