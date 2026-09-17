@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Number Generator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Generate random numbers within a range. Free online random number generator and dice roller.">
+<meta name="keywords" content="random number generator, rng, random number, random picker, number generator online">
+<meta property="og:title" content="Random Number Generator">
+<meta property="og:description" content="Generate random numbers within a range. Free online random number generator and dice roller.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/random-number-generator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/random-number-generator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Random Number Generator", "applicationCategory": "Math Calculators", "operatingSystem": "Any (web browser)", "description": "Generate random numbers within a range. Free online random number generator and dice roller.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/random-number-generator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-math-calculators">Math Calculators</a> <span class="sep">&rsaquo;</span> Random Number Generator</div>
+  <h1>Random Number Generator</h1>
+  <p class="subtitle">Generate random numbers within a range. Free online random number generator and dice roller.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Minimum</label><input type="number" id="min" value="1" oninput="gen()"></div>
+  <div class="input-group"><label>Maximum</label><input type="number" id="max" value="100" oninput="gen()"></div>
+  <div class="input-group"><label>Count</label><input type="number" id="count" value="1" min="1" max="100" oninput="gen()"></div>
+</div>
+<div style="display:flex;gap:8px;margin-top:12px"><button class="btn" onclick="gen()">Generate</button></div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Random Numbers</div>
+  <div class="value" id="result" style="word-break:break-all">42</div>
+</div>
+<div style="margin-top:8px"><label style="font-size:14px;font-weight:normal"><input type="checkbox" id="unique" onchange="gen()"> Allow duplicates</label></div>
+
+  </div>
+  <div class="info-section">
+<h2>About Random Number Generator</h2>
+<p>Generate random numbers within a range. Free online random number generator and dice roller.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function gen(){const min=parseInt(document.getElementById('min').value)||0;const max=parseInt(document.getElementById('max').value)||0;const count=parseInt(document.getElementById('count').value)||1;const uniq=!document.getElementById('unique').checked;if(min>max){document.getElementById('result').textContent='Min must be <= Max';return}if(uniq&&count>(max-min+1)){document.getElementById('result').textContent='Range too small for unique numbers';return}const nums=[];const pool=[];if(uniq){for(let i=min;i<=max;i++)pool.push(i);for(let i=0;i<count;i++){const idx=Math.floor(Math.random()*pool.length);nums.push(pool.splice(idx,1)[0])}}else{for(let i=0;i<count;i++)nums.push(Math.floor(Math.random()*(max-min+1))+min)}document.getElementById('result').textContent=nums.join(', ')}
+gen();
+</script>
+</body>
+</html>

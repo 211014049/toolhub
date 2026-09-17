@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factorial Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate the factorial of any non-negative integer. Free online factorial calculator n!.">
+<meta name="keywords" content="factorial calculator, n factorial, factorial calculator online, calculate factorial, math factorial">
+<meta property="og:title" content="Factorial Calculator">
+<meta property="og:description" content="Calculate the factorial of any non-negative integer. Free online factorial calculator n!.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/factorial-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/factorial-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Factorial Calculator", "applicationCategory": "Math Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate the factorial of any non-negative integer. Free online factorial calculator n!.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/factorial-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-math-calculators">Math Calculators</a> <span class="sep">&rsaquo;</span> Factorial Calculator</div>
+  <h1>Factorial Calculator</h1>
+  <p class="subtitle">Calculate the factorial of any non-negative integer. Free online factorial calculator n!.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Number (n)</label><input type="number" id="n" value="10" min="0" oninput="calcFact()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">n!</div>
+  <div class="value" id="result">3,628,800</div>
+</div>
+<div style="margin-top:8px;font-size:12px;color:var(--text-soft)">Supports n up to 170. Factorials of n>170 exceed JavaScript number precision.</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Factorial Calculator</h2>
+<p>Calculate the factorial of any non-negative integer. Free online factorial calculator n!.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcFact(){const n=parseInt(document.getElementById('n').value);if(isNaN(n)||n<0){document.getElementById('result').textContent='Enter a non-negative integer';return}if(n>170){document.getElementById('result').textContent='Infinity (too large)';return}let r=1;for(let i=2;i<=n;i++)r*=i;document.getElementById('result').textContent=r.toLocaleString('en-US',{maximumFractionDigits:0})}
+calcFact();
+</script>
+</body>
+</html>

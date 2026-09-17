@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profit Margin Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate profit margin, gross margin and net margin from revenue and cost. Free online profit margin calculator.">
+<meta name="keywords" content="profit margin calculator, gross margin, net margin, profit percentage, business margin calculator">
+<meta property="og:title" content="Profit Margin Calculator">
+<meta property="og:description" content="Calculate profit margin, gross margin and net margin from revenue and cost. Free online profit margin calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/profit-margin-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/profit-margin-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Profit Margin Calculator", "applicationCategory": "Business Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate profit margin, gross margin and net margin from revenue and cost. Free online profit margin calculator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/profit-margin-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-business-calculators">Business Calculators</a> <span class="sep">&rsaquo;</span> Profit Margin Calculator</div>
+  <h1>Profit Margin Calculator</h1>
+  <p class="subtitle">Calculate profit margin, gross margin and net margin from revenue and cost. Free online profit margin calculator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Revenue ($)</label><input type="number" id="revenue" value="100000" oninput="calcPM()"></div>
+  <div class="input-group"><label>Cost ($)</label><input type="number" id="cost" value="60000" oninput="calcPM()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Profit Margin</div>
+  <div class="value" id="margin">40%</div>
+  <div style="display:flex;gap:24px;margin-top:8px;font-size:14px;color:var(--text-soft)">
+    <span>Profit: <strong id="profit">$40,000</strong></span>
+    <span>Markup: <strong id="markup">66.67%</strong></span>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Profit Margin Calculator</h2>
+<p>Calculate profit margin, gross margin and net margin from revenue and cost. Free online profit margin calculator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcPM(){const r=parseFloat(document.getElementById('revenue').value)||0;const c=parseFloat(document.getElementById('cost').value)||0;const p=r-c;const margin=r>0?(p/r*100):0;const markup=c>0?(p/c*100):0;document.getElementById('margin').textContent=margin.toFixed(2)+'%';document.getElementById('profit').textContent='$'+p.toLocaleString('en-US');document.getElementById('markup').textContent=markup.toFixed(2)+'%'}
+calcPM();
+</script>
+</body>
+</html>

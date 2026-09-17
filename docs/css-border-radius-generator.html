@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Border Radius Generator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Generate CSS border-radius code with live preview. Free online CSS border radius generator.">
+<meta name="keywords" content="css border radius generator, border radius, rounded corners, css generator, border radius code">
+<meta property="og:title" content="CSS Border Radius Generator">
+<meta property="og:description" content="Generate CSS border-radius code with live preview. Free online CSS border radius generator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/css-border-radius-generator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/css-border-radius-generator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "CSS Border Radius Generator", "applicationCategory": "Color Tools", "operatingSystem": "Any (web browser)", "description": "Generate CSS border-radius code with live preview. Free online CSS border radius generator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/css-border-radius-generator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-color-tools">Color Tools</a> <span class="sep">&rsaquo;</span> CSS Border Radius Generator</div>
+  <h1>CSS Border Radius Generator</h1>
+  <p class="subtitle">Generate CSS border-radius code with live preview. Free online CSS border radius generator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Top-Left (px)</label><input type="number" id="tl" value="10" oninput="gen()"></div>
+  <div class="input-group"><label>Top-Right (px)</label><input type="number" id="tr" value="10" oninput="gen()"></div>
+</div>
+<div class="tool-row">
+  <div class="input-group"><label>Bottom-Right (px)</label><input type="number" id="br" value="10" oninput="gen()"></div>
+  <div class="input-group"><label>Bottom-Left (px)</label><input type="number" id="bl" value="10" oninput="gen()"></div>
+</div>
+<div style="margin-top:8px"><label style="font-size:14px;font-weight:normal"><input type="checkbox" id="link" checked onchange="toggleLink()"> Link all corners</label></div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Preview</div>
+  <div style="margin-top:12px;padding:40px;background:#f5f5f5;border-radius:8px;text-align:center">
+    <div id="preview" style="width:150px;height:100px;background:#3366ff;border-radius:10px;margin:0 auto"></div>
+  </div>
+  <div style="margin-top:12px">
+    <code id="code" style="display:block;padding:12px;background:var(--card);border-radius:6px;font-family:'Courier New',monospace;font-size:13px">border-radius: 10px;</code>
+  </div>
+</div>
+<div style="display:flex;gap:8px;margin-top:12px"><button class="btn" onclick="copyCode()">Copy CSS</button></div>
+
+  </div>
+  <div class="info-section">
+<h2>About CSS Border Radius Generator</h2>
+<p>Generate CSS border-radius code with live preview. Free online CSS border radius generator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function gen(){const tl=document.getElementById('tl').value;const tr=document.getElementById('tr').value;const br=document.getElementById('br').value;const bl=document.getElementById('bl').value;if(document.getElementById('link').checked){const val=tl;document.getElementById('tr').value=val;document.getElementById('br').value=val;document.getElementById('bl').value=val;const css='border-radius: '+val+'px;';document.getElementById('preview').style.borderRadius=val+'px';document.getElementById('code').textContent=css;return}const css='border-radius: '+tl+'px '+tr+'px '+br+'px '+bl+'px;';document.getElementById('preview').style.borderRadius=tl+'px '+tr+'px '+br+'px '+bl+'px';document.getElementById('code').textContent=css}
+function toggleLink(){gen()}
+function copyCode(){navigator.clipboard.writeText(document.getElementById('code').textContent)}
+gen();
+</script>
+</body>
+</html>

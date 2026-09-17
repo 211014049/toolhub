@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Case Converter - Free Online Tool | ToolHub</title>
+<meta name="description" content="Convert text to camelCase, snake_case, kebab-case, CONSTANT_CASE and more. Free online text case converter.">
+<meta name="keywords" content="text case converter, camel case, snake case, kebab case, constant case, text transform">
+<meta property="og:title" content="Text Case Converter">
+<meta property="og:description" content="Convert text to camelCase, snake_case, kebab-case, CONSTANT_CASE and more. Free online text case converter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/text-case-converter.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/text-case-converter.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Text Case Converter", "applicationCategory": "Text Tools", "operatingSystem": "Any (web browser)", "description": "Convert text to camelCase, snake_case, kebab-case, CONSTANT_CASE and more. Free online text case converter.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/text-case-converter.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-text-tools">Text Tools</a> <span class="sep">&rsaquo;</span> Text Case Converter</div>
+  <h1>Text Case Converter</h1>
+  <p class="subtitle">Convert text to camelCase, snake_case, kebab-case, CONSTANT_CASE and more. Free online text case converter.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Input Text</label><textarea id="input" placeholder="Enter text..." oninput="convert()">Hello World This Is A Test</textarea></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Conversions</div>
+  <div style="margin-top:8px">
+    <div style="padding:4px 0;border-bottom:1px solid var(--border)">camelCase: <strong id="camel">helloWorldThisIsATest</strong></div>
+    <div style="padding:4px 0;border-bottom:1px solid var(--border)">PascalCase: <strong id="pascal">HelloWorldThisIsATest</strong></div>
+    <div style="padding:4px 0;border-bottom:1px solid var(--border)">snake_case: <strong id="snake">hello_world_this_is_a_test</strong></div>
+    <div style="padding:4px 0;border-bottom:1px solid var(--border)">kebab-case: <strong id="kebab">hello-world-this-is-a-test</strong></div>
+    <div style="padding:4px 0;border-bottom:1px solid var(--border)">CONSTANT_CASE: <strong id="constant">HELLO_WORLD_THIS_IS_A_TEST</strong></div>
+    <div style="padding:4px 0">Title Case: <strong id="title">Hello World This Is A Test</strong></div>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Text Case Converter</h2>
+<p>Convert text to camelCase, snake_case, kebab-case, CONSTANT_CASE and more. Free online text case converter.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function convert(){const t=document.getElementById('input').value;const words=t.match(/[A-Z]?[a-z]+|[A-Z]+(?=[A-Z]|$)|\d+/g)||[];const lower=words.map(w=>w.toLowerCase());document.getElementById('camel').textContent=lower.map((w,i)=>i===0?w:w[0].toUpperCase()+w.slice(1)).join('');document.getElementById('pascal').textContent=lower.map(w=>w[0].toUpperCase()+w.slice(1)).join('');document.getElementById('snake').textContent=lower.join('_');document.getElementById('kebab').textContent=lower.join('-');document.getElementById('constant').textContent=lower.map(w=>w.toUpperCase()).join('_');document.getElementById('title').textContent=lower.map(w=>w[0].toUpperCase()+w.slice(1)).join(' ')}
+convert();
+</script>
+</body>
+</html>

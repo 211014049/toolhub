@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading Time Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate estimated reading time for text. Free online reading time and word count estimator.">
+<meta name="keywords" content="reading time calculator, reading time estimator, words per minute, read time, article reading time">
+<meta property="og:title" content="Reading Time Calculator">
+<meta property="og:description" content="Calculate estimated reading time for text. Free online reading time and word count estimator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/reading-time-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/reading-time-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Reading Time Calculator", "applicationCategory": "Text Tools", "operatingSystem": "Any (web browser)", "description": "Calculate estimated reading time for text. Free online reading time and word count estimator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/reading-time-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-text-tools">Text Tools</a> <span class="sep">&rsaquo;</span> Reading Time Calculator</div>
+  <h1>Reading Time Calculator</h1>
+  <p class="subtitle">Calculate estimated reading time for text. Free online reading time and word count estimator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Text</label><textarea id="input" placeholder="Paste your text here..." oninput="calcRT()">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea></div>
+</div>
+<div class="tool-row">
+  <div class="input-group"><label>Reading Speed (wpm)</label><input type="number" id="wpm" value="200" oninput="calcRT()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Reading Time</div>
+  <div class="value" id="time">0 min 22 sec</div>
+  <div style="display:flex;gap:24px;margin-top:8px;font-size:14px;color:var(--text-soft)">
+    <span>Words: <strong id="words">44</strong></span>
+    <span>Characters: <strong id="chars">230</strong></span>
+    <span>Sentences: <strong id="sentences">3</strong></span>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Reading Time Calculator</h2>
+<p>Calculate estimated reading time for text. Free online reading time and word count estimator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcRT(){const t=document.getElementById('input').value;const wpm=parseInt(document.getElementById('wpm').value)||200;const words=(t.match(/\b\w+\b/g)||[]).length;const chars=t.length;const sentences=(t.match(/[.!?]+/g)||[]).length;const sec=Math.ceil(words/wpm*60);const m=Math.floor(sec/60);const s=sec%60;document.getElementById('time').textContent=m+' min '+s+' sec';document.getElementById('words').textContent=words;document.getElementById('chars').textContent=chars;document.getElementById('sentences').textContent=sentences}
+calcRT();
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuel Economy Converter - Free Online Tool | ToolHub</title>
+<meta name="description" content="Convert between MPG, L/100km, km/L and other fuel economy units. Free online fuel economy converter.">
+<meta name="keywords" content="fuel economy converter, mpg to l/100km, l/100km to mpg, fuel consumption converter, km/l to mpg">
+<meta property="og:title" content="Fuel Economy Converter">
+<meta property="og:description" content="Convert between MPG, L/100km, km/L and other fuel economy units. Free online fuel economy converter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/fuel-economy-converter.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/fuel-economy-converter.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Fuel Economy Converter", "applicationCategory": "Calculators", "operatingSystem": "Any (web browser)", "description": "Convert between MPG, L/100km, km/L and other fuel economy units. Free online fuel economy converter.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/fuel-economy-converter.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-calculators">Calculators</a> <span class="sep">&rsaquo;</span> Fuel Economy Converter</div>
+  <h1>Fuel Economy Converter</h1>
+  <p class="subtitle">Convert between MPG, L/100km, km/L and other fuel economy units. Free online fuel economy converter.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Value</label><input type="number" id="value" value="30" step="0.1" oninput="convert()"></div>
+  <div class="input-group"><label>From</label>
+    <select id="from" onchange="convert()">
+      <option value="mpg_us">MPG (US)</option>
+      <option value="mpg_uk">MPG (UK)</option>
+      <option value="l100km">L/100km</option>
+      <option value="kml">km/L</option>
+    </select>
+  </div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Converted Values</div>
+  <div style="margin-top:8px">
+    <div style="padding:4px 0">MPG (US): <strong id="mpg_us">30.00</strong></div>
+    <div style="padding:4px 0">MPG (UK): <strong id="mpg_uk">36.02</strong></div>
+    <div style="padding:4px 0">L/100km: <strong id="l100km">7.84</strong></div>
+    <div style="padding:4px 0">km/L: <strong id="kml">12.75</strong></div>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Fuel Economy Converter</h2>
+<p>Convert between MPG, L/100km, km/L and other fuel economy units. Free online fuel economy converter.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function convert(){const v=parseFloat(document.getElementById('value').value)||0;const f=document.getElementById('from').value;let l100km;if(f==='mpg_us')l100km=235.215/v;else if(f==='mpg_uk')l100km=282.481/v;else if(f==='l100km')l100km=v;else l100km=100/v;document.getElementById('mpg_us').textContent=(235.215/l100km).toFixed(2);document.getElementById('mpg_uk').textContent=(282.481/l100km).toFixed(2);document.getElementById('l100km').textContent=l100km.toFixed(2);document.getElementById('kml').textContent=(100/l100km).toFixed(2)}
+convert();
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ovulation Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate ovulation date and fertile window from menstrual cycle. Free online ovulation tracker.">
+<meta name="keywords" content="ovulation calculator, fertile window, ovulation date, fertility calculator, ovulation tracker">
+<meta property="og:title" content="Ovulation Calculator">
+<meta property="og:description" content="Calculate ovulation date and fertile window from menstrual cycle. Free online ovulation tracker.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/ovulation-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/ovulation-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Ovulation Calculator", "applicationCategory": "Health Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate ovulation date and fertile window from menstrual cycle. Free online ovulation tracker.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/ovulation-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-health-calculators">Health Calculators</a> <span class="sep">&rsaquo;</span> Ovulation Calculator</div>
+  <h1>Ovulation Calculator</h1>
+  <p class="subtitle">Calculate ovulation date and fertile window from menstrual cycle. Free online ovulation tracker.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Last Period Start Date</label><input type="date" id="lmp" value="2026-01-01" oninput="calcOv()"></div>
+</div>
+<div class="tool-row">
+  <div class="input-group"><label>Cycle Length (days)</label><input type="number" id="cycle" value="28" oninput="calcOv()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Ovulation Date</div>
+  <div class="value" id="ovdate">2026-01-15</div>
+  <div style="display:flex;gap:24px;margin-top:8px;font-size:14px;color:var(--text-soft)">
+    <span>Fertile Window: <strong id="fertile">Jan 10 - Jan 15</strong></span>
+    <span>Next Period: <strong id="next">Jan 29</strong></span>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Ovulation Calculator</h2>
+<p>Calculate ovulation date and fertile window from menstrual cycle. Free online ovulation tracker.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcOv(){const lmp=new Date(document.getElementById('lmp').value);const c=parseInt(document.getElementById('cycle').value)||28;if(isNaN(lmp))return;const ov=new Date(lmp);ov.setDate(ov.getDate()+c-14);const fertileStart=new Date(ov);fertileStart.setDate(fertileStart.getDate()-5);const nextP=new Date(lmp);nextP.setDate(nextP.getDate()+c);const fmt=d=>d.toISOString().slice(0,10);const fmtShort=d=>d.toLocaleDateString('en-US',{month:'short',day:'numeric'});document.getElementById('ovdate').textContent=fmt(ov);document.getElementById('fertile').textContent=fmtShort(fertileStart)+' - '+fmtShort(ov);document.getElementById('next').textContent=fmtShort(nextP)}
+calcOv();
+</script>
+</body>
+</html>

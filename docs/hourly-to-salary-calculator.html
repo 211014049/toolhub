@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hourly to Salary Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Convert hourly wage to annual salary. Free online hourly to salary converter with overtime and tax estimates.">
+<meta name="keywords" content="hourly to salary, hourly wage to annual salary, wage converter, annual income calculator, hourly to yearly">
+<meta property="og:title" content="Hourly to Salary Calculator">
+<meta property="og:description" content="Convert hourly wage to annual salary. Free online hourly to salary converter with overtime and tax estimates.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/hourly-to-salary-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/hourly-to-salary-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hourly to Salary Calculator", "applicationCategory": "Business Calculators", "operatingSystem": "Any (web browser)", "description": "Convert hourly wage to annual salary. Free online hourly to salary converter with overtime and tax estimates.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/hourly-to-salary-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-business-calculators">Business Calculators</a> <span class="sep">&rsaquo;</span> Hourly to Salary Calculator</div>
+  <h1>Hourly to Salary Calculator</h1>
+  <p class="subtitle">Convert hourly wage to annual salary. Free online hourly to salary converter with overtime and tax estimates.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Hourly Rate ($)</label><input type="number" id="rate" value="25" step="0.01" oninput="calcHS()"></div>
+  <div class="input-group"><label>Hours per Week</label><input type="number" id="hours" value="40" oninput="calcHS()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Annual Salary</div>
+  <div class="value" id="annual">$52,000</div>
+  <div style="display:flex;gap:24px;margin-top:8px;font-size:14px;color:var(--text-soft)">
+    <span>Monthly: <strong id="monthly">$4,333</strong></span>
+    <span>Weekly: <strong id="weekly">$1,000</strong></span>
+    <span>Daily: <strong id="daily">$200</strong></span>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Hourly to Salary Calculator</h2>
+<p>Convert hourly wage to annual salary. Free online hourly to salary converter with overtime and tax estimates.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcHS(){const r=parseFloat(document.getElementById('rate').value)||0;const h=parseFloat(document.getElementById('hours').value)||0;const weekly=r*h;const annual=weekly*52;document.getElementById('annual').textContent='$'+annual.toLocaleString('en-US');document.getElementById('monthly').textContent='$'+Math.round(annual/12).toLocaleString('en-US');document.getElementById('weekly').textContent='$'+weekly.toLocaleString('en-US');document.getElementById('daily').textContent='$'+(r*h/5).toLocaleString('en-US')}
+calcHS();
+</script>
+</body>
+</html>

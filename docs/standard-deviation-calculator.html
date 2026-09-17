@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standard Deviation Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate standard deviation, variance, mean and range of a data set. Free online statistics calculator.">
+<meta name="keywords" content="standard deviation calculator, variance calculator, statistics calculator, mean calculator, sd calculator">
+<meta property="og:title" content="Standard Deviation Calculator">
+<meta property="og:description" content="Calculate standard deviation, variance, mean and range of a data set. Free online statistics calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/standard-deviation-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/standard-deviation-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Standard Deviation Calculator", "applicationCategory": "Math Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate standard deviation, variance, mean and range of a data set. Free online statistics calculator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/standard-deviation-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-math-calculators">Math Calculators</a> <span class="sep">&rsaquo;</span> Standard Deviation Calculator</div>
+  <h1>Standard Deviation Calculator</h1>
+  <p class="subtitle">Calculate standard deviation, variance, mean and range of a data set. Free online statistics calculator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Data (comma separated)</label><input type="text" id="data" value="2, 4, 4, 4, 5, 5, 7, 9" oninput="calcSD()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Statistics</div>
+  <div style="margin-top:8px">
+    <div style="display:flex;justify-content:space-between;padding:4px 0"><span>Mean</span><strong id="mean">5</strong></div>
+    <div style="display:flex;justify-content:space-between;padding:4px 0"><span>Standard Deviation</span><strong id="sd">2</strong></div>
+    <div style="display:flex;justify-content:space-between;padding:4px 0"><span>Variance</span><strong id="var">4</strong></div>
+    <div style="display:flex;justify-content:space-between;padding:4px 0"><span>Min / Max</span><strong id="minmax">2 / 9</strong></div>
+    <div style="display:flex;justify-content:space-between;padding:4px 0"><span>Count</span><strong id="count">8</strong></div>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Standard Deviation Calculator</h2>
+<p>Calculate standard deviation, variance, mean and range of a data set. Free online statistics calculator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcSD(){const nums=document.getElementById('data').value.split(',').map(s=>parseFloat(s.trim())).filter(n=>!isNaN(n));if(nums.length<2){document.getElementById('mean').textContent='Need 2+ numbers';return}const n=nums.length;const mean=nums.reduce((a,b)=>a+b,0)/n;const variance=nums.reduce((a,b)=>a+(b-mean)**2,0)/n;const sd=Math.sqrt(variance);document.getElementById('mean').textContent=mean.toFixed(4);document.getElementById('sd').textContent=sd.toFixed(4);document.getElementById('var').textContent=variance.toFixed(4);document.getElementById('minmax').textContent=Math.min(...nums)+' / '+Math.max(...nums);document.getElementById('count').textContent=n}
+calcSD();
+</script>
+</body>
+</html>

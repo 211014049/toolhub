@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power Converter - Free Online Tool | ToolHub</title>
+<meta name="description" content="Convert between watts, kilowatts, horsepower, BTU/hour and more. Free online power unit converter.">
+<meta name="keywords" content="power converter, watts to kilowatts, horsepower to watts, btu to watts, power unit converter">
+<meta property="og:title" content="Power Converter">
+<meta property="og:description" content="Convert between watts, kilowatts, horsepower, BTU/hour and more. Free online power unit converter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/power-converter.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/power-converter.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Power Converter", "applicationCategory": "Calculators", "operatingSystem": "Any (web browser)", "description": "Convert between watts, kilowatts, horsepower, BTU/hour and more. Free online power unit converter.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/power-converter.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-calculators">Calculators</a> <span class="sep">&rsaquo;</span> Power Converter</div>
+  <h1>Power Converter</h1>
+  <p class="subtitle">Convert between watts, kilowatts, horsepower, BTU/hour and more. Free online power unit converter.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Value</label><input type="number" id="value" value="1" step="any" oninput="convert()"></div>
+  <div class="input-group"><label>From</label>
+    <select id="from" onchange="convert()">
+      <option value="w">Watt (W)</option>
+      <option value="kw">Kilowatt (kW)</option>
+      <option value="hp">Horsepower (hp)</option>
+      <option value="btu">BTU/hour</option>
+      <option value="mw">Megawatt (MW)</option>
+    </select>
+  </div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Converted Values</div>
+  <div style="margin-top:8px">
+    <div style="padding:4px 0">Watts: <strong id="w">1.00</strong></div>
+    <div style="padding:4px 0">Kilowatts: <strong id="kw">0.001</strong></div>
+    <div style="padding:4px 0">Horsepower: <strong id="hp">0.0013</strong></div>
+    <div style="padding:4px 0">BTU/hour: <strong id="btu">3.41</strong></div>
+    <div style="padding:4px 0">Megawatts: <strong id="mw">0.000001</strong></div>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Power Converter</h2>
+<p>Convert between watts, kilowatts, horsepower, BTU/hour and more. Free online power unit converter.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function convert(){const v=parseFloat(document.getElementById('value').value)||0;const f=document.getElementById('from').value;let w;if(f==='w')w=v;else if(f==='kw')w=v*1000;else if(f==='hp')w=v*745.7;else if(f==='btu')w=v/3.41214;else w=v*1000000;document.getElementById('w').textContent=w.toFixed(4);document.getElementById('kw').textContent=(w/1000).toFixed(6);document.getElementById('hp').textContent=(w/745.7).toFixed(6);document.getElementById('btu').textContent=(w*3.41214).toFixed(4);document.getElementById('mw').textContent=(w/1000000).toFixed(8)}
+convert();
+</script>
+</body>
+</html>

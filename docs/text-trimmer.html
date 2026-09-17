@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Trimmer - Free Online Tool | ToolHub</title>
+<meta name="description" content="Trim whitespace, remove extra spaces and clean up text. Free online text trimmer and cleaner.">
+<meta name="keywords" content="text trimmer, trim whitespace, remove extra spaces, clean text, text cleaner">
+<meta property="og:title" content="Text Trimmer">
+<meta property="og:description" content="Trim whitespace, remove extra spaces and clean up text. Free online text trimmer and cleaner.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/text-trimmer.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/text-trimmer.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Text Trimmer", "applicationCategory": "Text Tools", "operatingSystem": "Any (web browser)", "description": "Trim whitespace, remove extra spaces and clean up text. Free online text trimmer and cleaner.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/text-trimmer.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-text-tools">Text Tools</a> <span class="sep">&rsaquo;</span> Text Trimmer</div>
+  <h1>Text Trimmer</h1>
+  <p class="subtitle">Trim whitespace, remove extra spaces and clean up text. Free online text trimmer and cleaner.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Text</label><textarea id="input" placeholder="  Enter   messy   text...  " oninput="trimText()">  Hello   World   This   is   messy  </textarea></div>
+</div>
+<div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+  <button class="btn" onclick="trimText()">Trim</button>
+  <button class="btn btn-secondary" onclick="squeezeSpaces()">Squeeze Spaces</button>
+  <button class="btn btn-secondary" onclick="removeEmpty()">Remove Empty Lines</button>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Result</div>
+  <textarea id="output" style="margin-top:8px" readonly></textarea>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Text Trimmer</h2>
+<p>Trim whitespace, remove extra spaces and clean up text. Free online text trimmer and cleaner.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function trimText(){const t=document.getElementById('input').value;document.getElementById('output').value=t.split('\n').map(l=>l.trim()).join('\n').trim()}
+function squeezeSpaces(){document.getElementById('output').value=document.getElementById('input').value.replace(/ +/g,' ').split('\n').map(l=>l.trim()).join('\n').trim()}
+function removeEmpty(){document.getElementById('output').value=document.getElementById('input').value.split('\n').filter(l=>l.trim()!=='').join('\n')}
+trimText();
+</script>
+</body>
+</html>

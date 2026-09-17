@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frequency Converter - Free Online Tool | ToolHub</title>
+<meta name="description" content="Convert between Hz, kHz, MHz, GHz and more. Free online frequency unit converter.">
+<meta name="keywords" content="frequency converter, hz to khz, mhz to ghz, frequency unit converter, hertz converter">
+<meta property="og:title" content="Frequency Converter">
+<meta property="og:description" content="Convert between Hz, kHz, MHz, GHz and more. Free online frequency unit converter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/frequency-converter.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/frequency-converter.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Frequency Converter", "applicationCategory": "Calculators", "operatingSystem": "Any (web browser)", "description": "Convert between Hz, kHz, MHz, GHz and more. Free online frequency unit converter.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/frequency-converter.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-calculators">Calculators</a> <span class="sep">&rsaquo;</span> Frequency Converter</div>
+  <h1>Frequency Converter</h1>
+  <p class="subtitle">Convert between Hz, kHz, MHz, GHz and more. Free online frequency unit converter.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Value</label><input type="number" id="value" value="1" step="any" oninput="convert()"></div>
+  <div class="input-group"><label>From</label>
+    <select id="from" onchange="convert()">
+      <option value="hz">Hertz (Hz)</option>
+      <option value="khz">Kilohertz (kHz)</option>
+      <option value="mhz">Megahertz (MHz)</option>
+      <option value="ghz">Gigahertz (GHz)</option>
+      <option value="rpm">RPM</option>
+    </select>
+  </div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Converted Values</div>
+  <div style="margin-top:8px">
+    <div style="padding:4px 0">Hz: <strong id="hz">1.00</strong></div>
+    <div style="padding:4px 0">kHz: <strong id="khz">0.001</strong></div>
+    <div style="padding:4px 0">MHz: <strong id="mhz">0.000001</strong></div>
+    <div style="padding:4px 0">GHz: <strong id="ghz">0.000000001</strong></div>
+    <div style="padding:4px 0">RPM: <strong id="rpm">60.00</strong></div>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Frequency Converter</h2>
+<p>Convert between Hz, kHz, MHz, GHz and more. Free online frequency unit converter.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function convert(){const v=parseFloat(document.getElementById('value').value)||0;const f=document.getElementById('from').value;let hz;if(f==='hz')hz=v;else if(f==='khz')hz=v*1000;else if(f==='mhz')hz=v*1000000;else if(f==='ghz')hz=v*1000000000;else hz=v/60;document.getElementById('hz').textContent=hz.toFixed(4);document.getElementById('khz').textContent=(hz/1000).toFixed(8);document.getElementById('mhz').textContent=(hz/1000000).toFixed(12);document.getElementById('ghz').textContent=(hz/1000000000).toExponential(6);document.getElementById('rpm').textContent=(hz*60).toFixed(4)}
+convert();
+</script>
+</body>
+</html>

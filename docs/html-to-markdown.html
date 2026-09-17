@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML to Markdown Converter - Free Online Tool | ToolHub</title>
+<meta name="description" content="Convert HTML code to Markdown format. Free online HTML to Markdown converter.">
+<meta name="keywords" content="html to markdown, html to md, convert html to markdown, html markdown converter, html to md converter">
+<meta property="og:title" content="HTML to Markdown Converter">
+<meta property="og:description" content="Convert HTML code to Markdown format. Free online HTML to Markdown converter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/html-to-markdown.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/html-to-markdown.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "HTML to Markdown Converter", "applicationCategory": "Developer Tools", "operatingSystem": "Any (web browser)", "description": "Convert HTML code to Markdown format. Free online HTML to Markdown converter.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/html-to-markdown.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-developer-tools">Developer Tools</a> <span class="sep">&rsaquo;</span> HTML to Markdown Converter</div>
+  <h1>HTML to Markdown Converter</h1>
+  <p class="subtitle">Convert HTML code to Markdown format. Free online HTML to Markdown converter.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>HTML Input</label><textarea id="input" placeholder="<h1>Title</h1><p>Paragraph</p>" style="min-height:120px"><h1>Hello World</h1>
+<p>This is <strong>bold</strong> and <em>italic</em>.</p>
+<ul><li>Item 1</li><li>Item 2</li></ul></textarea></div>
+</div>
+<div style="display:flex;gap:8px;margin-top:12px"><button class="btn" onclick="convert()">Convert</button><button class="btn btn-secondary" onclick="copyResult()">Copy</button></div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Markdown Output</div>
+  <textarea id="output" style="margin-top:8px" readonly></textarea>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About HTML to Markdown Converter</h2>
+<p>Convert HTML code to Markdown format. Free online HTML to Markdown converter.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function convert(){let h=document.getElementById('input').value;h=h.replace(/<h1[^>]*>(.*?)<\/h1>/gi,'## $1\n');h=h.replace(/<h2[^>]*>(.*?)<\/h2>/gi,'## $1\n');h=h.replace(/<h3[^>]*>(.*?)<\/h3>/gi,'### $1\n');h=h.replace(/<h4[^>]*>(.*?)<\/h4>/gi,'#### $1\n');h=h.replace(/<strong[^>]*>(.*?)<\/strong>/gi,'**$1**');h=h.replace(/<b[^>]*>(.*?)<\/b>/gi,'**$1**');h=h.replace(/<em[^>]*>(.*?)<\/em>/gi,'*$1*');h=h.replace(/<i[^>]*>(.*?)<\/i>/gi,'*$1*');h=h.replace(/<a[^>]*href="(.*?)"[^>]*>(.*?)<\/a>/gi,'[$2]($1)');h=h.replace(/<li[^>]*>(.*?)<\/li>/gi,'- $1\n');h=h.replace(/<ul[^>]*>/gi,'\n');h=h.replace(/<\/ul>/gi,'\n');h=h.replace(/<p[^>]*>(.*?)<\/p>/gi,'$1\n\n');h=h.replace(/<br\s*\/?>/gi,'\n');h=h.replace(/<[^>]+>/g,'');h=h.replace(/\n{3,}/g,'\n\n');document.getElementById('output').value=h.trim()}
+function copyResult(){navigator.clipboard.writeText(document.getElementById('output').value)}
+convert();
+</script>
+</body>
+</html>

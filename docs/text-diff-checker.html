@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Diff Checker - Free Online Tool | ToolHub</title>
+<meta name="description" content="Compare two texts and highlight differences. Free online text comparison and diff tool.">
+<meta name="keywords" content="text diff checker, text comparison, compare text, text difference, diff tool online">
+<meta property="og:title" content="Text Diff Checker">
+<meta property="og:description" content="Compare two texts and highlight differences. Free online text comparison and diff tool.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/text-diff-checker.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/text-diff-checker.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Text Diff Checker", "applicationCategory": "Text Tools", "operatingSystem": "Any (web browser)", "description": "Compare two texts and highlight differences. Free online text comparison and diff tool.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/text-diff-checker.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-text-tools">Text Tools</a> <span class="sep">&rsaquo;</span> Text Diff Checker</div>
+  <h1>Text Diff Checker</h1>
+  <p class="subtitle">Compare two texts and highlight differences. Free online text comparison and diff tool.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Original Text</label><textarea id="text1" placeholder="Enter original text..." style="min-height:100px">The quick brown fox
+jumps over the lazy dog
+Hello World</textarea></div>
+</div>
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Modified Text</label><textarea id="text2" placeholder="Enter modified text..." style="min-height:100px">The quick brown fox
+jumps over the lazy cat
+Hello World
+New line</textarea></div>
+</div>
+<div style="display:flex;gap:8px;margin-top:12px"><button class="btn" onclick="compareText()">Compare</button></div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Differences</div>
+  <div id="output" style="margin-top:8px;font-family:'Courier New',monospace;font-size:13px"></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Text Diff Checker</h2>
+<p>Compare two texts and highlight differences. Free online text comparison and diff tool.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function compareText(){const l1=document.getElementById('text1').value.split('\n');const l2=document.getElementById('text2').value.split('\n');const max=Math.max(l1.length,l2.length);let html='';for(let i=0;i<max;i++){const a=l1[i]||'';const b=l2[i]||'';if(a===b){html+='<div style="padding:2px 0;color:var(--text-soft)">  '+escapeHTML(a)+'</div>'}else{if(a)html+='<div style="padding:2px 0;color:#c62828;background:rgba(198,40,40,0.05)">- '+escapeHTML(a)+'</div>';if(b)html+='<div style="padding:2px 0;color:#2e7d32;background:rgba(46,125,50,0.05)">+ '+escapeHTML(b)+'</div>'}}document.getElementById('output').innerHTML=html}
+function escapeHTML(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+compareText();
+</script>
+</body>
+</html>

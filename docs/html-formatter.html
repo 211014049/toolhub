@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Formatter - Free Online Tool | ToolHub</title>
+<meta name="description" content="Format and beautify HTML code with proper indentation. Free online HTML formatter and beautifier.">
+<meta name="keywords" content="html formatter, html beautifier, format html, html indent, pretty print html">
+<meta property="og:title" content="HTML Formatter">
+<meta property="og:description" content="Format and beautify HTML code with proper indentation. Free online HTML formatter and beautifier.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/html-formatter.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/html-formatter.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "HTML Formatter", "applicationCategory": "Developer Tools", "operatingSystem": "Any (web browser)", "description": "Format and beautify HTML code with proper indentation. Free online HTML formatter and beautifier.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/html-formatter.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-developer-tools">Developer Tools</a> <span class="sep">&rsaquo;</span> HTML Formatter</div>
+  <h1>HTML Formatter</h1>
+  <p class="subtitle">Format and beautify HTML code with proper indentation. Free online HTML formatter and beautifier.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>HTML Input</label><textarea id="input" placeholder="<html><body><h1>Hello</h1></body></html>" style="min-height:120px"><div><p>Hello</p><p>World</p></div></textarea></div>
+</div>
+<div style="display:flex;gap:8px;margin-top:12px"><button class="btn" onclick="formatHTML()">Format</button><button class="btn btn-secondary" onclick="copyResult()">Copy</button></div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Formatted HTML</div>
+  <textarea id="output" style="margin-top:8px" readonly></textarea>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About HTML Formatter</h2>
+<p>Format and beautify HTML code with proper indentation. Free online HTML formatter and beautifier.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function formatHTML(){let html=document.getElementById('input').value;let indent=0;let result='';const tokens=html.replace(/></g,'>\n<').split('\n');for(let line of tokens){line=line.trim();if(!line)continue;if(line.startsWith('</'))indent--;result+='  '.repeat(Math.max(0,indent))+line+'\n';if(line.startsWith('<')&&!line.startsWith('</')&&!line.startsWith('<img')&&!line.startsWith('<br')&&!line.startsWith('<input')&&!line.startsWith('<meta')&&!line.startsWith('<hr')&&!line.startsWith('<link')&&!line.endsWith('/>')){if(!line.includes('</')||line.lastIndexOf('<')<line.lastIndexOf('</'))indent++}}document.getElementById('output').value=result.trim()}
+function copyResult(){navigator.clipboard.writeText(document.getElementById('output').value)}
+formatHTML();
+</script>
+</body>
+</html>

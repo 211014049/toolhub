@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savings Goal Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate how much to save monthly to reach your savings goal. Free online savings goal calculator.">
+<meta name="keywords" content="savings goal calculator, savings planner, how much to save, savings target, savings calculator">
+<meta property="og:title" content="Savings Goal Calculator">
+<meta property="og:description" content="Calculate how much to save monthly to reach your savings goal. Free online savings goal calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/savings-goal-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/savings-goal-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Savings Goal Calculator", "applicationCategory": "Business Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate how much to save monthly to reach your savings goal. Free online savings goal calculator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/savings-goal-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-business-calculators">Business Calculators</a> <span class="sep">&rsaquo;</span> Savings Goal Calculator</div>
+  <h1>Savings Goal Calculator</h1>
+  <p class="subtitle">Calculate how much to save monthly to reach your savings goal. Free online savings goal calculator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Savings Goal ($)</label><input type="number" id="goal" value="50000" oninput="calcSG()"></div>
+  <div class="input-group"><label>Current Savings ($)</label><input type="number" id="current" value="5000" oninput="calcSG()"></div>
+</div>
+<div class="tool-row">
+  <div class="input-group"><label>Months to Save</label><input type="number" id="months" value="24" oninput="calcSG()"></div>
+  <div class="input-group"><label>Annual Interest (%)</label><input type="number" id="rate" value="4" step="0.1" oninput="calcSG()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Monthly Savings Needed</div>
+  <div class="value" id="monthly">$1,854.37</div>
+  <div style="margin-top:8px;font-size:14px;color:var(--text-soft)">Total Contributions: <strong id="contrib">$44,444.44</strong> | Interest Earned: <strong id="interest">$555.56</strong></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Savings Goal Calculator</h2>
+<p>Calculate how much to save monthly to reach your savings goal. Free online savings goal calculator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcSG(){const goal=parseFloat(document.getElementById('goal').value)||0;const curr=parseFloat(document.getElementById('current').value)||0;const n=parseInt(document.getElementById('months').value)||0;const r=(parseFloat(document.getElementById('rate').value)||0)/100/12;const need=goal-curr;if(n<=0||need<=0){document.getElementById('monthly').textContent='$0.00';return}let monthly;if(r===0){monthly=need/n}else{monthly=need*r/(Math.pow(1+r,n)-1)}const contrib=monthly*n;const interest=need-contrib;document.getElementById('monthly').textContent='$'+monthly.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});document.getElementById('contrib').textContent='$'+contrib.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});document.getElementById('interest').textContent='$'+Math.abs(interest).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+calcSG();
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASCII Character Table - Free Online Tool | ToolHub</title>
+<meta name="description" content="Browse the complete ASCII character table with decimal, hex and binary values. Free online ASCII reference.">
+<meta name="keywords" content="ascii table, ascii characters, ascii codes, ascii reference, character encoding table">
+<meta property="og:title" content="ASCII Character Table">
+<meta property="og:description" content="Browse the complete ASCII character table with decimal, hex and binary values. Free online ASCII reference.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/ascii-table.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/ascii-table.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ASCII Character Table", "applicationCategory": "Developer Tools", "operatingSystem": "Any (web browser)", "description": "Browse the complete ASCII character table with decimal, hex and binary values. Free online ASCII reference.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/ascii-table.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-developer-tools">Developer Tools</a> <span class="sep">&rsaquo;</span> ASCII Character Table</div>
+  <h1>ASCII Character Table</h1>
+  <p class="subtitle">Browse the complete ASCII character table with decimal, hex and binary values. Free online ASCII reference.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">ASCII Table (32-126)</div>
+  <div id="table" style="margin-top:8px"></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About ASCII Character Table</h2>
+<p>Browse the complete ASCII character table with decimal, hex and binary values. Free online ASCII reference.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function buildTable(){let html='<table style="width:100%;border-collapse:collapse;font-size:13px"><tr style="border-bottom:2px solid var(--border)"><th style="padding:4px 8px;text-align:left">Char</th><th style="padding:4px 8px;text-align:left">Dec</th><th style="padding:4px 8px;text-align:left">Hex</th><th style="padding:4px 8px;text-align:left">Binary</th><th style="padding:4px 8px;text-align:left">Description</th></tr>';const names={32:'Space',33:'Exclamation',34:'Quotation',35:'Hash',36:'Dollar',37:'Percent',38:'Ampersand',39:'Apostrophe',40:'Left Paren',41:'Right Paren',42:'Asterisk',43:'Plus',44:'Comma',45:'Hyphen',46:'Period',47:'Slash',58:'Colon',59:'Semicolon',60:'Less Than',61:'Equals',62:'Greater Than',63:'Question',64:'At',91:'Left Bracket',92:'Backslash',93:'Right Bracket',94:'Caret',95:'Underscore',96:'Backtick',123:'Left Brace',124:'Pipe',125:'Right Brace',126:'Tilde'};for(let i=32;i<=126;i++){const ch=i===32?'&nbsp;':String.fromCharCode(i);const hex=i.toString(16).toUpperCase();const bin=i.toString(2).padStart(8,'0');const name=names[i]||String.fromCharCode(i);html+='<tr style="border-bottom:1px solid var(--border)"><td style="padding:4px 8px;font-family:Courier New">'+ch+'</td><td style="padding:4px 8px">'+i+'</td><td style="padding:4px 8px">0x'+hex+'</td><td style="padding:4px 8px">'+bin+'</td><td style="padding:4px 8px">'+name+'</td></tr>'}html+='</table>';document.getElementById('table').innerHTML=html}
+buildTable();
+</script>
+</body>
+</html>

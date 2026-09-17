@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prime Number Checker - Free Online Tool | ToolHub</title>
+<meta name="description" content="Check if a number is prime and find prime factors. Free online prime number checker and tester.">
+<meta name="keywords" content="prime number checker, prime checker, is it prime, prime number test, prime factorization">
+<meta property="og:title" content="Prime Number Checker">
+<meta property="og:description" content="Check if a number is prime and find prime factors. Free online prime number checker and tester.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/prime-number-checker.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/prime-number-checker.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Prime Number Checker", "applicationCategory": "Math Calculators", "operatingSystem": "Any (web browser)", "description": "Check if a number is prime and find prime factors. Free online prime number checker and tester.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/prime-number-checker.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-math-calculators">Math Calculators</a> <span class="sep">&rsaquo;</span> Prime Number Checker</div>
+  <h1>Prime Number Checker</h1>
+  <p class="subtitle">Check if a number is prime and find prime factors. Free online prime number checker and tester.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Number</label><input type="number" id="n" value="97" min="2" oninput="checkPrime()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Result</div>
+  <div class="value" id="result">97 is a prime number</div>
+</div>
+<div id="factors-box" style="margin-top:12px;display:none">
+  <div class="label">Prime Factors</div>
+  <div id="factors" style="margin-top:4px"></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Prime Number Checker</h2>
+<p>Check if a number is prime and find prime factors. Free online prime number checker and tester.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function checkPrime(){const n=parseInt(document.getElementById('n').value);if(isNaN(n)||n<2){document.getElementById('result').textContent='Enter a number >= 2';document.getElementById('factors-box').style.display='none';return}let isPrime=true;if(n===2){isPrime=true}else if(n%2===0){isPrime=false}else{for(let i=3;i<=Math.sqrt(n);i+=2){if(n%i===0){isPrime=false;break}}}document.getElementById('result').textContent=n+' is '+(isPrime?'a prime number':'not a prime number');if(!isPrime){const factors=[];let x=n;for(let i=2;i<=x;i++){while(x%i===0){factors.push(i);x/=i}}document.getElementById('factors').textContent=n+' = '+factors.join(' x ');document.getElementById('factors-box').style.display='block'}else{document.getElementById('factors-box').style.display='none'}}
+checkPrime();
+</script>
+</body>
+</html>

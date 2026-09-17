@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angle Converter - Free Online Tool | ToolHub</title>
+<meta name="description" content="Convert between degrees, radians, gradians and turns. Free online angle converter.">
+<meta name="keywords" content="angle converter, degrees to radians, radians to degrees, gradian, angle conversion">
+<meta property="og:title" content="Angle Converter">
+<meta property="og:description" content="Convert between degrees, radians, gradians and turns. Free online angle converter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/angle-converter.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/angle-converter.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Angle Converter", "applicationCategory": "Calculators", "operatingSystem": "Any (web browser)", "description": "Convert between degrees, radians, gradians and turns. Free online angle converter.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/angle-converter.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-calculators">Calculators</a> <span class="sep">&rsaquo;</span> Angle Converter</div>
+  <h1>Angle Converter</h1>
+  <p class="subtitle">Convert between degrees, radians, gradians and turns. Free online angle converter.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Degrees</label><input type="number" id="deg" value="90" step="any" oninput="fromDeg()"></div>
+  <div class="input-group"><label>Radians</label><input type="number" id="rad" value="1.5708" step="any" oninput="fromRad()"></div>
+</div>
+<div class="tool-row">
+  <div class="input-group"><label>Gradians</label><input type="number" id="grad" value="100" step="any" oninput="fromGrad()"></div>
+  <div class="input-group"><label>Turns</label><input type="number" id="turn" value="0.25" step="any" oninput="fromTurn()"></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Angle Converter</h2>
+<p>Convert between degrees, radians, gradians and turns. Free online angle converter.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function fromDeg(){const d=parseFloat(document.getElementById('deg').value)||0;document.getElementById('rad').value=(d*Math.PI/180).toFixed(6);document.getElementById('grad').value=(d*10/9).toFixed(6);document.getElementById('turn').value=(d/360).toFixed(6)}
+function fromRad(){const r=parseFloat(document.getElementById('rad').value)||0;const d=r*180/Math.PI;document.getElementById('deg').value=d.toFixed(6);document.getElementById('grad').value=(d*10/9).toFixed(6);document.getElementById('turn').value=(d/360).toFixed(6)}
+function fromGrad(){const g=parseFloat(document.getElementById('grad').value)||0;const d=g*0.9;document.getElementById('deg').value=d.toFixed(6);document.getElementById('rad').value=(d*Math.PI/180).toFixed(6);document.getElementById('turn').value=(d/360).toFixed(6)}
+function fromTurn(){const t=parseFloat(document.getElementById('turn').value)||0;const d=t*360;document.getElementById('deg').value=d.toFixed(6);document.getElementById('rad').value=(d*Math.PI/180).toFixed(6);document.getElementById('grad').value=(d*10/9).toFixed(6)}
+fromDeg();
+</script>
+</body>
+</html>

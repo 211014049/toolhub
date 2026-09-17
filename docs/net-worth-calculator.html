@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Net Worth Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate your net worth from total assets and liabilities. Free online net worth calculator.">
+<meta name="keywords" content="net worth calculator, assets minus liabilities, personal net worth, wealth calculator, net worth tracker">
+<meta property="og:title" content="Net Worth Calculator">
+<meta property="og:description" content="Calculate your net worth from total assets and liabilities. Free online net worth calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/net-worth-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/net-worth-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Net Worth Calculator", "applicationCategory": "Business Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate your net worth from total assets and liabilities. Free online net worth calculator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/net-worth-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-business-calculators">Business Calculators</a> <span class="sep">&rsaquo;</span> Net Worth Calculator</div>
+  <h1>Net Worth Calculator</h1>
+  <p class="subtitle">Calculate your net worth from total assets and liabilities. Free online net worth calculator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Total Assets ($)</label><input type="number" id="assets" value="350000" oninput="calcNW()"></div>
+  <div class="input-group"><label>Total Liabilities ($)</label><input type="number" id="liabilities" value="150000" oninput="calcNW()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Net Worth</div>
+  <div class="value" id="networth">$200,000</div>
+  <div style="margin-top:8px;font-size:14px;color:var(--text-soft)">Debt-to-Asset Ratio: <strong id="ratio">42.86%</strong></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Net Worth Calculator</h2>
+<p>Calculate your net worth from total assets and liabilities. Free online net worth calculator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="loan-calculator.html">Loan Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="roi-calculator.html">ROI Calculator</a><a href="percentage-calculator.html">Percentage Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcNW(){const a=parseFloat(document.getElementById('assets').value)||0;const l=parseFloat(document.getElementById('liabilities').value)||0;const nw=a-l;document.getElementById('networth').textContent=(nw<0?'-$':'$')+Math.abs(nw).toLocaleString('en-US');document.getElementById('ratio').textContent=a>0?(l/a*100).toFixed(2)+'%':'0%'}
+calcNW();
+</script>
+</body>
+</html>
