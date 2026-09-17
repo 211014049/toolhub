@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - ToolHub</title>
+<meta name="description" content="Contact ToolHub. Send us feedback, report a bug, or suggest a new tool.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://211014049.github.io/toolhub/contact.html">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> Contact</div>
+  <h1>Contact Us</h1>
+  <p class="subtitle">Have feedback, a bug report, or a tool suggestion? We'd love to hear from you.</p>
+  <div class="tool-card" style="padding:32px">
+    <h2>Get in Touch</h2>
+    <p><strong>Email:</strong> <a href="mailto:contact@toolhub.tools">contact@toolhub.tools</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/211014049/toolhub" target="_blank">github.com/211014049/toolhub</a></p>
+
+    <h2>Send a Message</h2>
+    <form onsubmit="event.preventDefault(); document.getElementById('form-status').style.display='block'; this.reset();" style="margin-top:16px">
+      <div class="tool-row" style="margin-bottom:12px">
+        <div class="input-group" style="flex:1 1 45%"><label>Name</label><input type="text" id="name" required></div>
+        <div class="input-group" style="flex:1 1 45%"><label>Email</label><input type="email" id="email" required></div>
+      </div>
+      <div class="input-group" style="width:100%;margin-bottom:12px"><label>Subject</label><input type="text" id="subject" required></div>
+      <div class="input-group" style="width:100%;margin-bottom:12px"><label>Message</label><textarea id="message" rows="5" required></textarea></div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div id="form-status" style="display:none;padding:12px;background:rgba(46,125,50,0.1);border-radius:6px;color:#2e7d32;margin-top:12px">
+      Thank you for your message! We'll get back to you soon.
+    </div>
+
+    <h2>FAQ</h2>
+    <p><strong>Are these tools free?</strong> Yes, all 200+ tools are completely free to use.</p>
+    <p><strong>Do I need to create an account?</strong> No, there is no registration or login required.</p>
+    <p><strong>Is my data safe?</strong> Yes, all tools run in your browser. Your data never leaves your device.</p>
+    <p><strong>Can I suggest a new tool?</strong> Absolutely! Send us an email or open an issue on GitHub.</p>
+  </div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a> | <a href="about.html">About</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="contact.html">Contact</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
