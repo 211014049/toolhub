@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exponent Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate exponents and powers. Free online exponent calculator for any base and power.">
+<meta name="keywords" content="exponent calculator, power calculator, x to the power of y, exponential calculator, math power">
+<meta property="og:title" content="Exponent Calculator">
+<meta property="og:description" content="Calculate exponents and powers. Free online exponent calculator for any base and power.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/exponent-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/exponent-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Exponent Calculator", "applicationCategory": "Math Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate exponents and powers. Free online exponent calculator for any base and power.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/exponent-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-math-calculators">Math Calculators</a> <span class="sep">&rsaquo;</span> Exponent Calculator</div>
+  <h1>Exponent Calculator</h1>
+  <p class="subtitle">Calculate exponents and powers. Free online exponent calculator for any base and power.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Base</label><input type="number" id="base" value="2" step="any" oninput="calcExp()"></div>
+  <div class="input-group"><label>Exponent</label><input type="number" id="exp" value="10" step="any" oninput="calcExp()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Result</div>
+  <div class="value" id="result">1,024</div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Exponent Calculator</h2>
+<p>Calculate exponents and powers. Free online exponent calculator for any base and power.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcExp(){const b=parseFloat(document.getElementById('base').value)||0;const e=parseFloat(document.getElementById('exp').value)||0;const r=Math.pow(b,e);document.getElementById('result').textContent=r.toLocaleString('en-US',{maximumFractionDigits:10})}
+calcExp();
+</script>
+</body>
+</html>

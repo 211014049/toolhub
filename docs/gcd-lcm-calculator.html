@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCD and LCM Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Find the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) of any numbers. Free online GCD LCM calculator.">
+<meta name="keywords" content="gcd calculator, lcm calculator, greatest common divisor, least common multiple, hcf calculator">
+<meta property="og:title" content="GCD and LCM Calculator">
+<meta property="og:description" content="Find the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) of any numbers. Free online GCD LCM calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/gcd-lcm-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/gcd-lcm-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "GCD and LCM Calculator", "applicationCategory": "Math Calculators", "operatingSystem": "Any (web browser)", "description": "Find the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) of any numbers. Free online GCD LCM calculator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/gcd-lcm-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-math-calculators">Math Calculators</a> <span class="sep">&rsaquo;</span> GCD and LCM Calculator</div>
+  <h1>GCD and LCM Calculator</h1>
+  <p class="subtitle">Find the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) of any numbers. Free online GCD LCM calculator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Numbers (comma separated)</label><input type="text" id="nums" value="12, 18, 24" oninput="calcGCDLCM()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Results</div>
+  <div class="value" id="gcd">GCD: 6</div>
+  <div style="margin-top:4px;font-size:16px;color:var(--text)" id="lcm">LCM: 72</div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About GCD and LCM Calculator</h2>
+<p>Find the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) of any numbers. Free online GCD LCM calculator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function gcd2(a,b){return b===0?a:gcd2(b,a%b)}
+function lcm2(a,b){return a*b/gcd2(a,b)}
+function calcGCDLCM(){const nums=document.getElementById('nums').value.split(',').map(s=>parseInt(s.trim())).filter(n=>!isNaN(n));if(nums.length<1)return;let g=nums[0];for(let i=1;i<nums.length;i++)g=gcd2(g,nums[i]);let l=nums[0];for(let i=1;i<nums.length;i++)l=lcm2(l,nums[i]);document.getElementById('gcd').textContent='GCD: '+g;document.getElementById('lcm').textContent='LCM: '+l}
+calcGCDLCM();
+</script>
+</body>
+</html>

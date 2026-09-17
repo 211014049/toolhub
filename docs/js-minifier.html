@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JS Minifier - Free Online Tool | ToolHub</title>
+<meta name="description" content="Minify JavaScript code to reduce file size. Free online JavaScript minifier and compressor.">
+<meta name="keywords" content="js minifier, javascript minifier, minify js, js compressor, javascript compressor">
+<meta property="og:title" content="JS Minifier">
+<meta property="og:description" content="Minify JavaScript code to reduce file size. Free online JavaScript minifier and compressor.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/js-minifier.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/js-minifier.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "JS Minifier", "applicationCategory": "Developer Tools", "operatingSystem": "Any (web browser)", "description": "Minify JavaScript code to reduce file size. Free online JavaScript minifier and compressor.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/js-minifier.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-developer-tools">Developer Tools</a> <span class="sep">&rsaquo;</span> JS Minifier</div>
+  <h1>JS Minifier</h1>
+  <p class="subtitle">Minify JavaScript code to reduce file size. Free online JavaScript minifier and compressor.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>JavaScript Input</label><textarea id="input" placeholder="Paste JS here..." style="min-height:120px">function hello(name) {
+  console.log("Hello " + name);
+}</textarea></div>
+</div>
+<div style="display:flex;gap:8px;margin-top:12px"><button class="btn" onclick="minifyJS()">Minify</button><button class="btn btn-secondary" onclick="copyResult()">Copy</button></div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Minified JS</div>
+  <textarea id="output" style="margin-top:8px" readonly></textarea>
+  <div style="margin-top:4px;font-size:12px;color:var(--text-soft)">Original: <strong id="orig">0 bytes</strong> | Minified: <strong id="min">0 bytes</strong> | Saved: <strong id="saved">0%</strong></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About JS Minifier</h2>
+<p>Minify JavaScript code to reduce file size. Free online JavaScript minifier and compressor.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function minifyJS(){let js=document.getElementById('input').value;const orig=js.length;js=js.replace(/\/\*[\s\S]*?\*\//g,'');js=js.replace(/\/\/.*$/gm,'');js=js.replace(/\n\s*$/g,'\n');js=js.replace(/\s+/g,' ');js=js.replace(/\s*([=+\-*/{}();,:<>!?&|])\s*/g,'$1');js=js.trim();document.getElementById('output').value=js;document.getElementById('orig').textContent=orig+' bytes';document.getElementById('min').textContent=js.length+' bytes';document.getElementById('saved').textContent=orig>0?Math.round((1-js.length/orig)*100)+'%':'0%'}
+function copyResult(){navigator.clipboard.writeText(document.getElementById('output').value)}
+minifyJS();
+</script>
+</body>
+</html>

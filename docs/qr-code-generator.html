@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR Code Generator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Generate QR codes from any text or URL. Free online QR code generator.">
+<meta name="keywords" content="qr code generator, qr generator, create qr code, qr code maker, url to qr code">
+<meta property="og:title" content="QR Code Generator">
+<meta property="og:description" content="Generate QR codes from any text or URL. Free online QR code generator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/qr-code-generator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/qr-code-generator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "QR Code Generator", "applicationCategory": "Developer Tools", "operatingSystem": "Any (web browser)", "description": "Generate QR codes from any text or URL. Free online QR code generator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/qr-code-generator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-developer-tools">Developer Tools</a> <span class="sep">&rsaquo;</span> QR Code Generator</div>
+  <h1>QR Code Generator</h1>
+  <p class="subtitle">Generate QR codes from any text or URL. Free online QR code generator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Text or URL</label><input type="text" id="input" value="https://211014049.github.io/toolhub/" oninput="generateQR()"></div>
+</div>
+<div class="tool-row">
+  <div class="input-group"><label>Size</label><select id="size" onchange="generateQR()"><option value="150">150px</option><option value="200" selected>200px</option><option value="300">300px</option><option value="400">400px</option></select></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px;text-align:center">
+  <div class="label">QR Code</div>
+  <div style="margin-top:12px;display:flex;justify-content:center">
+    <img id="qrimg" src="" alt="QR Code" style="border:1px solid var(--border);border-radius:8px">
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About QR Code Generator</h2>
+<p>Generate QR codes from any text or URL. Free online QR code generator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function generateQR(){const t=document.getElementById('input').value||' ';const s=document.getElementById('size').value;document.getElementById('qrimg').src='https://api.qrserver.com/v1/create-qr-code/?size='+s+'x'+s+'&data='+encodeURIComponent(t)}
+generateQR();
+</script>
+</body>
+</html>

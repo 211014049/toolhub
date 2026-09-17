@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number to Words Converter - Free Online Tool | ToolHub</title>
+<meta name="description" content="Convert any number to English words. Free online number to text converter for checks and documents.">
+<meta name="keywords" content="number to words, number to text, write number in words, number spelling, check amount in words">
+<meta property="og:title" content="Number to Words Converter">
+<meta property="og:description" content="Convert any number to English words. Free online number to text converter for checks and documents.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/number-to-words.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/number-to-words.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Number to Words Converter", "applicationCategory": "Math Calculators", "operatingSystem": "Any (web browser)", "description": "Convert any number to English words. Free online number to text converter for checks and documents.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/number-to-words.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-math-calculators">Math Calculators</a> <span class="sep">&rsaquo;</span> Number to Words Converter</div>
+  <h1>Number to Words Converter</h1>
+  <p class="subtitle">Convert any number to English words. Free online number to text converter for checks and documents.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Number</label><input type="number" id="num" value="12345" oninput="convertNum()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">In Words</div>
+  <div class="value" id="result" style="font-size:20px">Twelve Thousand Three Hundred Forty-Five</div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Number to Words Converter</h2>
+<p>Convert any number to English words. Free online number to text converter for checks and documents.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+const ones=['','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen'];const tens=['','','Twenty','Thirty','Forty','Fifty','Sixty','Seventy','Eighty','Ninety'];const scales=['','Thousand','Million','Billion','Trillion'];
+function threeDigits(n){let w='';if(n>=100){w+=ones[Math.floor(n/100)]+' Hundred ';n%=100}if(n>=20){w+=tens[Math.floor(n/10)];if(n%10)w+='-'+ones[n%10]}else{w+=ones[n]}return w.trim()}
+function convertNum(){const n=parseInt(document.getElementById('num').value);if(isNaN(n)){document.getElementById('result').textContent='';return}if(n===0){document.getElementById('result').textContent='Zero';return}let num=Math.abs(n);let words=n<0?'Negative ':'';let scaleIdx=0;let parts=[];while(num>0){const chunk=num%1000;if(chunk>0){parts.unshift(threeDigits(chunk)+(scales[scaleIdx]?' '+scales[scaleIdx]:''))}num=Math.floor(num/1000);scaleIdx++}document.getElementById('result').textContent=parts.join(' ')}
+convertNum();
+</script>
+</body>
+</html>

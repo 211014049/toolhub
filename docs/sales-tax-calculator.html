@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Tax Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate sales tax and total price including tax. Free online sales tax calculator for any state or country.">
+<meta name="keywords" content="sales tax calculator, tax calculator, vat calculator, price with tax, tax included calculator">
+<meta property="og:title" content="Sales Tax Calculator">
+<meta property="og:description" content="Calculate sales tax and total price including tax. Free online sales tax calculator for any state or country.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/sales-tax-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/sales-tax-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Sales Tax Calculator", "applicationCategory": "Finance Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate sales tax and total price including tax. Free online sales tax calculator for any state or country.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/sales-tax-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-finance-calculators">Finance Calculators</a> <span class="sep">&rsaquo;</span> Sales Tax Calculator</div>
+  <h1>Sales Tax Calculator</h1>
+  <p class="subtitle">Calculate sales tax and total price including tax. Free online sales tax calculator for any state or country.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Amount Before Tax ($)</label><input type="number" id="amount" value="100" oninput="calcTax()"></div>
+  <div class="input-group"><label>Tax Rate (%)</label><input type="number" id="rate" value="8.25" step="0.01" oninput="calcTax()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Total After Tax</div>
+  <div class="value" id="total">$108.25</div>
+  <div style="margin-top:8px;font-size:14px;color:var(--text-soft)">Tax Amount: <strong id="tax">$8.25</strong></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Sales Tax Calculator</h2>
+<p>Calculate sales tax and total price including tax. Free online sales tax calculator for any state or country.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcTax(){const a=parseFloat(document.getElementById('amount').value)||0;const r=parseFloat(document.getElementById('rate').value)||0;const tax=a*r/100;document.getElementById('tax').textContent='$'+tax.toFixed(2);document.getElementById('total').textContent='$'+(a+tax).toFixed(2)}
+calcTax();
+</script>
+</body>
+</html>

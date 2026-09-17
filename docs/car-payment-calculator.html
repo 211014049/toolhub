@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Payment Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate monthly car loan payments, total interest and total cost. Free online auto loan calculator.">
+<meta name="keywords" content="car payment calculator, auto loan calculator, car loan estimator, monthly car payment, vehicle payment calculator">
+<meta property="og:title" content="Car Payment Calculator">
+<meta property="og:description" content="Calculate monthly car loan payments, total interest and total cost. Free online auto loan calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/car-payment-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/car-payment-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Car Payment Calculator", "applicationCategory": "Finance Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate monthly car loan payments, total interest and total cost. Free online auto loan calculator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/car-payment-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-finance-calculators">Finance Calculators</a> <span class="sep">&rsaquo;</span> Car Payment Calculator</div>
+  <h1>Car Payment Calculator</h1>
+  <p class="subtitle">Calculate monthly car loan payments, total interest and total cost. Free online auto loan calculator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Vehicle Price ($)</label><input type="number" id="price" value="25000" oninput="calcCar()"></div>
+  <div class="input-group"><label>Down Payment ($)</label><input type="number" id="down" value="5000" oninput="calcCar()"></div>
+</div>
+<div class="tool-row">
+  <div class="input-group"><label>Interest Rate (%)</label><input type="number" id="rate" value="4.5" step="0.1" oninput="calcCar()"></div>
+  <div class="input-group"><label>Loan Term (months)</label><input type="number" id="months" value="60" oninput="calcCar()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Monthly Payment</div>
+  <div class="value" id="monthly">$372.86</div>
+  <div style="display:flex;gap:24px;margin-top:8px;font-size:14px;color:var(--text-soft)">
+    <span>Total Interest: <strong id="interest">$2,371.65</strong></span>
+    <span>Total Cost: <strong id="total">$22,371.65</strong></span>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Car Payment Calculator</h2>
+<p>Calculate monthly car loan payments, total interest and total cost. Free online auto loan calculator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcCar(){const p=parseFloat(document.getElementById('price').value)-parseFloat(document.getElementById('down').value)||0;const r=(parseFloat(document.getElementById('rate').value)||0)/100/12;const n=parseInt(document.getElementById('months').value)||0;if(p>0&&r>0&&n>0){const m=p*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);const total=m*n;document.getElementById('monthly').textContent='$'+m.toFixed(2);document.getElementById('interest').textContent='$'+(total-p).toFixed(2);document.getElementById('total').textContent='$'+total.toFixed(2)}} 
+calcCar();
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date Difference Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate the difference between two dates in days, weeks, months and years. Free online date calculator.">
+<meta name="keywords" content="date difference calculator, days between dates, date duration, how many days between dates, date gap">
+<meta property="og:title" content="Date Difference Calculator">
+<meta property="og:description" content="Calculate the difference between two dates in days, weeks, months and years. Free online date calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/date-difference-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/date-difference-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Date Difference Calculator", "applicationCategory": "Date & Time Tools", "operatingSystem": "Any (web browser)", "description": "Calculate the difference between two dates in days, weeks, months and years. Free online date calculator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/date-difference-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-date-and-time-tools">Date & Time Tools</a> <span class="sep">&rsaquo;</span> Date Difference Calculator</div>
+  <h1>Date Difference Calculator</h1>
+  <p class="subtitle">Calculate the difference between two dates in days, weeks, months and years. Free online date calculator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Start Date</label><input type="date" id="start" value="2026-01-01" oninput="calcDate()"></div>
+  <div class="input-group"><label>End Date</label><input type="date" id="end" value="2026-12-31" oninput="calcDate()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Date Difference</div>
+  <div class="value" id="days">364 days</div>
+  <div style="display:flex;gap:24px;margin-top:8px;font-size:14px;color:var(--text-soft)">
+    <span>Weeks: <strong id="weeks">52</strong></span>
+    <span>Months: <strong id="months">11</strong></span>
+    <span>Years: <strong id="years">0.997</strong></span>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Date Difference Calculator</h2>
+<p>Calculate the difference between two dates in days, weeks, months and years. Free online date calculator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcDate(){const s=new Date(document.getElementById('start').value);const e=new Date(document.getElementById('end').value);if(isNaN(s)||isNaN(e))return;const ms=e-s;const days=Math.floor(ms/86400000);document.getElementById('days').textContent=days+' days';document.getElementById('weeks').textContent=Math.floor(days/7);document.getElementById('months').textContent=Math.floor(days/30.44);document.getElementById('years').textContent=(days/365.25).toFixed(3)}
+calcDate();
+</script>
+</body>
+</html>

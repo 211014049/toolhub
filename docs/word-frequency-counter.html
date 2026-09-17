@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Frequency Counter - Free Online Tool | ToolHub</title>
+<meta name="description" content="Count word frequency in text. Free online word frequency analyzer and text analysis tool.">
+<meta name="keywords" content="word frequency counter, word frequency, text analysis, word count frequency, word occurrence">
+<meta property="og:title" content="Word Frequency Counter">
+<meta property="og:description" content="Count word frequency in text. Free online word frequency analyzer and text analysis tool.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/word-frequency-counter.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/word-frequency-counter.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Word Frequency Counter", "applicationCategory": "Text Tools", "operatingSystem": "Any (web browser)", "description": "Count word frequency in text. Free online word frequency analyzer and text analysis tool.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/word-frequency-counter.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-text-tools">Text Tools</a> <span class="sep">&rsaquo;</span> Word Frequency Counter</div>
+  <h1>Word Frequency Counter</h1>
+  <p class="subtitle">Count word frequency in text. Free online word frequency analyzer and text analysis tool.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Text</label><textarea id="input" placeholder="Enter text to analyze..." oninput="countFreq()">the quick brown fox jumps over the lazy dog the cat</textarea></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Word Frequency</div>
+  <div id="output" style="margin-top:8px"></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Word Frequency Counter</h2>
+<p>Count word frequency in text. Free online word frequency analyzer and text analysis tool.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function countFreq(){const t=document.getElementById('input').value.toLowerCase();const words=t.match(/\b\w+\b/g)||[];const freq={};for(const w of words){freq[w]=(freq[w]||0)+1}const sorted=Object.entries(freq).sort((a,b)=>b[1]-a[1]);let html='<table style="width:100%;border-collapse:collapse"><tr style="text-align:left;border-bottom:2px solid var(--border)"><th style="padding:4px 8px">Word</th><th style="padding:4px 8px">Count</th></tr>';for(const[w,c]of sorted.slice(0,50)){html+='<tr style="border-bottom:1px solid var(--border)"><td style="padding:4px 8px">'+w+'</td><td style="padding:4px 8px">'+c+'</td></tr>'}html+='</table>';document.getElementById('output').innerHTML=html}
+countFreq();
+</script>
+</body>
+</html>

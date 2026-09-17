@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roman Numeral Converter - Free Online Tool | ToolHub</title>
+<meta name="description" content="Convert between Roman numerals and numbers. Free online Roman numeral translator.">
+<meta name="keywords" content="roman numeral converter, roman numerals, roman to number, number to roman, roman numeral translator">
+<meta property="og:title" content="Roman Numeral Converter">
+<meta property="og:description" content="Convert between Roman numerals and numbers. Free online Roman numeral translator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/roman-numeral-converter.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/roman-numeral-converter.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Roman Numeral Converter", "applicationCategory": "Number Base Converters", "operatingSystem": "Any (web browser)", "description": "Convert between Roman numerals and numbers. Free online Roman numeral translator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/roman-numeral-converter.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-number-base-converters">Number Base Converters</a> <span class="sep">&rsaquo;</span> Roman Numeral Converter</div>
+  <h1>Roman Numeral Converter</h1>
+  <p class="subtitle">Convert between Roman numerals and numbers. Free online Roman numeral translator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Number (1-3999)</label><input type="number" id="num" value="2024" min="1" max="3999" oninput="toRoman()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Roman Numeral</div>
+  <div class="value" id="roman">MMXXIV</div>
+</div>
+<div style="margin-top:16px;border-top:1px solid var(--border);padding-top:16px">
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Roman Numeral</label><input type="text" id="rom" value="MMXXIV" oninput="fromRoman()" style="font-family:'Courier New',monospace"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Number</div>
+  <div class="value" id="numout">2024</div>
+</div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Roman Numeral Converter</h2>
+<p>Convert between Roman numerals and numbers. Free online Roman numeral translator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function toRoman(){const vals=[1000,900,500,400,100,90,50,40,10,9,5,4,1];const syms=['M','CM','D','CD','C','XC','L','XL','X','IX','V','IV','I'];let n=parseInt(document.getElementById('num').value)||0;if(n<1||n>3999){document.getElementById('roman').textContent='Out of range';return}let r='';for(let i=0;i<vals.length;i++){while(n>=vals[i]){r+=syms[i];n-=vals[i]}}document.getElementById('roman').textContent=r}
+function fromRoman(){const s=document.getElementById('rom').value.toUpperCase();const map={M:1000,CM:900,D:500,CD:400,C:100,XC:90,L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1};let n=0;let i=0;while(i<s.length){if(i+1<s.length&&map[s.substring(i,i+2)]){n+=map[s.substring(i,i+2)];i+=2}else{if(map[s[i]]){n+=map[s[i]];i++}else{i++}}}document.getElementById('numout').textContent=n}
+toRoman();fromRoman();
+</script>
+</body>
+</html>

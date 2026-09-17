@@ -1,663 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://toolhub.vercel.app/length-converter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/weight-converter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/temperature-converter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/volume-converter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/speed-converter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/data-size-converter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/area-converter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/time-converter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/pressure-converter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/energy-converter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/meter-to-centimeter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/meter-to-foot.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/meter-to-inch.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/centimeter-to-inch.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kilometer-to-mile.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/inch-to-centimeter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/foot-to-meter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/yard-to-meter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/centimeter-to-millimeter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/meter-to-yard.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/meter-to-kilometer.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/inch-to-millimeter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kilogram-to-pound.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/pound-to-kilogram.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kilogram-to-gram.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/gram-to-ounce.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kilogram-to-ounce.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/metric-ton-to-kilogram.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/gram-to-kilogram.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/pound-to-ounce.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/celsius-to-fahrenheit.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/fahrenheit-to-celsius.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/celsius-to-kelvin.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kelvin-to-celsius.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/fahrenheit-to-kelvin.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kelvin-to-fahrenheit.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/liter-to-gallon.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/gallon-to-liter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/liter-to-milliliter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/milliliter-to-liter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/liter-to-cup.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/cup-to-milliliter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/gallon-to-milliliter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/fluid-ounce-to-milliliter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kilometer-hour-to-mile-hour.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/mile-hour-to-kilometer-hour.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/meter-second-to-kilometer-hour.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kilometer-hour-to-meter-second.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/knot-to-kilometer-hour.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/knot-to-mile-hour.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/megabyte-to-gigabyte.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/gigabyte-to-megabyte.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kilobyte-to-megabyte.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/gigabyte-to-terabyte.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/terabyte-to-gigabyte.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/megabyte-to-kilobyte.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/byte-to-kilobyte.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kilobyte-to-byte.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/square-meter-to-square-foot.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/square-foot-to-square-meter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/acre-to-hectare.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/hectare-to-acre.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/square-foot-to-square-inch.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/square-meter-to-acre.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/day-to-hour.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/hour-to-minute.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/minute-to-second.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/week-to-day.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/month-to-day.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/year-to-day.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/hour-to-second.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/day-to-minute.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/pound-square-inch-to-bar.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/bar-to-pound-square-inch.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kilopascal-to-pound-square-inch.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/atmosphere-to-pound-square-inch.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/joule-to-calorie.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/calorie-to-joule.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kilojoule-to-kilocalorie.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kilocalorie-to-kilojoule.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/watt-hour-to-kilowatt-hour.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/kilowatt-hour-to-watt-hour.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/json-formatter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/base64-encoder.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/url-encoder.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/uuid-generator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/password-generator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/hash-generator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/html-encoder.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/regex-tester.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/jwt-decoder.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/cron-expression-parser.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/word-counter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/case-converter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/text-reverser.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/lorem-ipsum-generator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/slug-generator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/remove-duplicate-lines.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/text-sorter.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/percentage-calculator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/bmi-calculator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/age-calculator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/tip-calculator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/discount-calculator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/compound-interest-calculator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/average-calculator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/hex-to-rgb.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/rgb-to-hex.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/gradient-generator.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://toolhub.vercel.app/index.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<url><loc>https://211014049.github.io/toolhub/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<url><loc>https://211014049.github.io/toolhub/length-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/weight-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/temperature-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/volume-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/speed-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/data-size-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/area-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/time-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/pressure-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/energy-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/meter-to-centimeter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/meter-to-foot.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/meter-to-inch.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/centimeter-to-inch.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kilometer-to-mile.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/inch-to-centimeter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/foot-to-meter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/yard-to-meter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/centimeter-to-millimeter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/meter-to-yard.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/meter-to-kilometer.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/inch-to-millimeter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/mile-to-kilometer.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kilogram-to-pound.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/pound-to-kilogram.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kilogram-to-gram.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/gram-to-ounce.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kilogram-to-ounce.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/metric-ton-to-kilogram.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/gram-to-kilogram.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/pound-to-ounce.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/ounce-to-gram.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/celsius-to-fahrenheit.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/fahrenheit-to-celsius.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/celsius-to-kelvin.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kelvin-to-celsius.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/fahrenheit-to-kelvin.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kelvin-to-fahrenheit.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/liter-to-gallon.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/gallon-to-liter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/liter-to-milliliter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/milliliter-to-liter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/liter-to-cup.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/cup-to-milliliter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/gallon-to-milliliter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/fluid-ounce-to-milliliter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/ounce-to-milliliter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kilometer-hour-to-mile-hour.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/mile-hour-to-kilometer-hour.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/meter-second-to-kilometer-hour.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kilometer-hour-to-meter-second.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/knot-to-kilometer-hour.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/knot-to-mile-hour.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/megabyte-to-gigabyte.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/gigabyte-to-megabyte.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kilobyte-to-megabyte.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/gigabyte-to-terabyte.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/terabyte-to-gigabyte.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/megabyte-to-kilobyte.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/byte-to-kilobyte.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kilobyte-to-byte.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/square-meter-to-square-foot.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/square-foot-to-square-meter.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/acre-to-hectare.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/hectare-to-acre.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/square-foot-to-square-inch.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/square-meter-to-acre.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/day-to-hour.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/hour-to-minute.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/minute-to-second.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/week-to-day.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/month-to-day.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/year-to-day.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/hour-to-second.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/day-to-minute.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/pound-square-inch-to-bar.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/bar-to-pound-square-inch.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kilopascal-to-pound-square-inch.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/atmosphere-to-pound-square-inch.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/joule-to-calorie.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/calorie-to-joule.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kilojoule-to-kilocalorie.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kilocalorie-to-kilojoule.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/watt-hour-to-kilowatt-hour.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/kilowatt-hour-to-watt-hour.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/json-formatter.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/base64-encoder.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/url-encoder.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/uuid-generator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/password-generator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/hash-generator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/html-encoder.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/regex-tester.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/jwt-decoder.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/cron-expression-parser.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/csv-to-json.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/json-to-csv.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/css-minifier.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/js-minifier.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/qr-code-generator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/image-to-base64.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/word-counter.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/case-converter.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/text-reverser.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/lorem-ipsum-generator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/slug-generator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/remove-duplicate-lines.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/text-sorter.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/find-and-replace.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/word-frequency-counter.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/markdown-to-html.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/percentage-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/bmi-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/age-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/tip-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/discount-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/compound-interest-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/average-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/hex-to-rgb.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/rgb-to-hex.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/gradient-generator.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/color-picker.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/hsl-to-hex.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/hex-to-hsl.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/loan-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/mortgage-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/sales-tax-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/simple-interest-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/roi-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/car-payment-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/income-tax-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/scientific-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/fraction-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/quadratic-equation-solver.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/percentage-increase-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/ratio-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/gcd-lcm-calculator.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/number-to-words.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/lcm-calculator.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/gcd-calculator.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/square-root-calculator.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/exponent-calculator.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/decimal-to-binary.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/binary-to-decimal.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/decimal-to-hex.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/hex-to-decimal.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/decimal-to-octal.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/binary-to-hex.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/hex-to-binary.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/binary-to-octal.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/octal-to-decimal.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://211014049.github.io/toolhub/roman-numeral-converter.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/text-to-binary.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/binary-to-text.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/date-difference-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/countdown-timer.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/working-days-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/calorie-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://211014049.github.io/toolhub/ideal-weight-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/body-fat-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/water-intake-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/heart-rate-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://211014049.github.io/toolhub/tip-calculator-2.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

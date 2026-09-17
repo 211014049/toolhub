@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text to Binary Converter - Free Online Tool | ToolHub</title>
+<meta name="description" content="Convert text to binary code (ASCII). Free online text to binary translator.">
+<meta name="keywords" content="text to binary, text to binary converter, ascii to binary, binary translator, text to bits">
+<meta property="og:title" content="Text to Binary Converter">
+<meta property="og:description" content="Convert text to binary code (ASCII). Free online text to binary translator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/text-to-binary.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/text-to-binary.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Text to Binary Converter", "applicationCategory": "Number Base Converters", "operatingSystem": "Any (web browser)", "description": "Convert text to binary code (ASCII). Free online text to binary translator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/text-to-binary.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-number-base-converters">Number Base Converters</a> <span class="sep">&rsaquo;</span> Text to Binary Converter</div>
+  <h1>Text to Binary Converter</h1>
+  <p class="subtitle">Convert text to binary code (ASCII). Free online text to binary translator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Text Input</label><textarea id="input" placeholder="Hello World" oninput="textToBinary()">Hello</textarea></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Binary Output</div>
+  <pre id="output" style="white-space:pre-wrap;word-break:break-all;font-family:'Courier New',monospace;font-size:14px;margin:0;color:var(--text)">01001000 01100101 01101100 01101100 01101111</pre>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Text to Binary Converter</h2>
+<p>Convert text to binary code (ASCII). Free online text to binary translator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function textToBinary(){const t=document.getElementById('input').value;let r='';for(let i=0;i<t.length;i++){r+=t.charCodeAt(i).toString(2).padStart(8,'0')+' '}document.getElementById('output').textContent=r.trim()}
+textToBinary();
+</script>
+</body>
+</html>

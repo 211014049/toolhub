@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROI Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate Return on Investment (ROI) and annualized return. Free online ROI calculator for investments.">
+<meta name="keywords" content="roi calculator, return on investment, investment return, annualized return, roi percentage">
+<meta property="og:title" content="ROI Calculator">
+<meta property="og:description" content="Calculate Return on Investment (ROI) and annualized return. Free online ROI calculator for investments.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/roi-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/roi-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ROI Calculator", "applicationCategory": "Finance Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate Return on Investment (ROI) and annualized return. Free online ROI calculator for investments.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/roi-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-finance-calculators">Finance Calculators</a> <span class="sep">&rsaquo;</span> ROI Calculator</div>
+  <h1>ROI Calculator</h1>
+  <p class="subtitle">Calculate Return on Investment (ROI) and annualized return. Free online ROI calculator for investments.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Initial Investment ($)</label><input type="number" id="initial" value="10000" oninput="calcROI()"></div>
+  <div class="input-group"><label>Final Value ($)</label><input type="number" id="final" value="15000" oninput="calcROI()"></div>
+  <div class="input-group"><label>Time (years)</label><input type="number" id="years" value="2" step="0.5" oninput="calcROI()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Return on Investment</div>
+  <div class="value" id="roi">50.00%</div>
+  <div style="margin-top:8px;font-size:14px;color:var(--text-soft)">Annualized Return: <strong id="annual">22.47%</strong> | Profit: <strong id="profit">$5,000</strong></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About ROI Calculator</h2>
+<p>Calculate Return on Investment (ROI) and annualized return. Free online ROI calculator for investments.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcROI(){const i=parseFloat(document.getElementById('initial').value)||0;const f=parseFloat(document.getElementById('final').value)||0;const y=parseFloat(document.getElementById('years').value)||0;if(i>0){const roi=(f-i)/i*100;const annual=y>0?(Math.pow(f/i,1/y)-1)*100:0;document.getElementById('roi').textContent=roi.toFixed(2)+'%';document.getElementById('annual').textContent=annual.toFixed(2)+'%';document.getElementById('profit').textContent='$'+(f-i).toLocaleString('en-US')}}}
+calcROI();
+</script>
+</body>
+</html>

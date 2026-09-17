@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fraction Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Add, subtract, multiply and divide fractions. Free online fraction calculator with step-by-step results.">
+<meta name="keywords" content="fraction calculator, adding fractions, subtracting fractions, multiplying fractions, dividing fractions">
+<meta property="og:title" content="Fraction Calculator">
+<meta property="og:description" content="Add, subtract, multiply and divide fractions. Free online fraction calculator with step-by-step results.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/fraction-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/fraction-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Fraction Calculator", "applicationCategory": "Math Calculators", "operatingSystem": "Any (web browser)", "description": "Add, subtract, multiply and divide fractions. Free online fraction calculator with step-by-step results.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/fraction-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-math-calculators">Math Calculators</a> <span class="sep">&rsaquo;</span> Fraction Calculator</div>
+  <h1>Fraction Calculator</h1>
+  <p class="subtitle">Add, subtract, multiply and divide fractions. Free online fraction calculator with step-by-step results.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Fraction 1 (a/b)</label><input type="text" id="f1" value="1/4" style="font-family:'Courier New',monospace"></div>
+  <div class="input-group" style="max-width:60px"><label>Op</label>
+    <select id="op"><option value="+">+</option><option value="-">-</option><option value="*">&times;</option><option value="/">/</option></select>
+  </div>
+  <div class="input-group"><label>Fraction 2 (c/d)</label><input type="text" id="f2" value="3/8" style="font-family:'Courier New',monospace"></div>
+</div>
+<div style="display:flex;gap:8px;margin-top:12px"><button class="btn" onclick="calcFrac()">Calculate</button></div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Result</div>
+  <div class="value" id="result">5/8</div>
+  <div style="margin-top:8px;font-size:14px;color:var(--text-soft)">Decimal: <strong id="decimal">0.625</strong></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Fraction Calculator</h2>
+<p>Add, subtract, multiply and divide fractions. Free online fraction calculator with step-by-step results.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function gcd(a,b){return b===0?a:gcd(b,a%b)}
+function calcFrac(){try{const p1=document.getElementById('f1').value.split('/').map(Number);const p2=document.getElementById('f2').value.split('/').map(Number);let n1=p1.length===2?p1[0]/p1[1]:p1[0];let d1=p1.length===2?p1[1]:1;let n2=p2.length===2?p2[0]/p2[1]:p2[0];let d2=p2.length===2?p2[1]:1;const op=document.getElementById('op').value;let n,d;if(op==='+'){n=n1*d2+n2*d1;d=d1*d2}else if(op==='-'){n=n1*d2-n2*d1;d=d1*d2}else if(op==='*'){n=n1*n2;d=d1*d2}else{n=n1*d2;d=d1*n2}if(d<0){d=-d;n=-n}const g=gcd(Math.abs(n),Math.abs(d));n=n/g;d=d/g;document.getElementById('result').textContent=n+'/'+d;document.getElementById('decimal').textContent=(n/d).toFixed(6)}catch(e){document.getElementById('result').textContent='Error'}}
+</script>
+</body>
+</html>

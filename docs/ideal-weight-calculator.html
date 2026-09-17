@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ideal Weight Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate ideal body weight based on height and gender using multiple formulas. Free online ideal weight calculator.">
+<meta name="keywords" content="ideal weight calculator, healthy weight, target weight, ideal body weight, weight goal calculator">
+<meta property="og:title" content="Ideal Weight Calculator">
+<meta property="og:description" content="Calculate ideal body weight based on height and gender using multiple formulas. Free online ideal weight calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/ideal-weight-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/ideal-weight-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Ideal Weight Calculator", "applicationCategory": "Health Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate ideal body weight based on height and gender using multiple formulas. Free online ideal weight calculator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/ideal-weight-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-health-calculators">Health Calculators</a> <span class="sep">&rsaquo;</span> Ideal Weight Calculator</div>
+  <h1>Ideal Weight Calculator</h1>
+  <p class="subtitle">Calculate ideal body weight based on height and gender using multiple formulas. Free online ideal weight calculator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Gender</label><select id="gender" onchange="calcIW()"><option value="male">Male</option><option value="female">Female</option></select></div>
+  <div class="input-group"><label>Height (cm)</label><input type="number" id="height" value="170" oninput="calcIW()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Ideal Weight Range</div>
+  <div class="value" id="result">63.4 - 71.6 kg</div>
+  <div style="margin-top:8px;font-size:14px;color:var(--text-soft)">Devine: <strong id="devine">67.1 kg</strong> | Robinson: <strong id="rob">63.4 kg</strong> | Miller: <strong id="mil">66.0 kg</strong></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Ideal Weight Calculator</h2>
+<p>Calculate ideal body weight based on height and gender using multiple formulas. Free online ideal weight calculator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcIW(){const h=parseFloat(document.getElementById('height').value)||0;const g=document.getElementById('gender').value;const inchOver152=(h-152.4)/2.54;if(inchOver152<0){document.getElementById('result').textContent='Height too low';return}let devine,rob,mil;if(g==='male'){devine=50+2.3*inchOver152;rob=52+1.9*inchOver152;mil=56.2+1.41*inchOver152}else{devine=45.5+2.3*inchOver152;rob=49+1.7*inchOver152;mil=53.1+1.36*inchOver152}const low=Math.min(devine,rob,mil);const high=Math.max(devine,rob,mil);document.getElementById('result').textContent=low.toFixed(1)+' - '+high.toFixed(1)+' kg';document.getElementById('devine').textContent=devine.toFixed(1)+' kg';document.getElementById('rob').textContent=rob.toFixed(1)+' kg';document.getElementById('mil').textContent=mil.toFixed(1)+' kg'}
+calcIW();
+</script>
+</body>
+</html>

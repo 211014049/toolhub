@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown Timer - Free Online Tool | ToolHub</title>
+<meta name="description" content="Count down to any date and time. Free online countdown timer for events and deadlines.">
+<meta name="keywords" content="countdown timer, countdown, days until, time until, event countdown">
+<meta property="og:title" content="Countdown Timer">
+<meta property="og:description" content="Count down to any date and time. Free online countdown timer for events and deadlines.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/countdown-timer.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/countdown-timer.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Countdown Timer", "applicationCategory": "Date & Time Tools", "operatingSystem": "Any (web browser)", "description": "Count down to any date and time. Free online countdown timer for events and deadlines.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/countdown-timer.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-date-and-time-tools">Date & Time Tools</a> <span class="sep">&rsaquo;</span> Countdown Timer</div>
+  <h1>Countdown Timer</h1>
+  <p class="subtitle">Count down to any date and time. Free online countdown timer for events and deadlines.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Target Date & Time</label><input type="datetime-local" id="target" value="2026-12-31T23:59" oninput="startCountdown()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Time Remaining</div>
+  <div class="value" id="result" style="font-size:28px">--</div>
+  <div style="display:flex;gap:16px;margin-top:8px;font-size:14px;color:var(--text-soft)">
+    <span>Days: <strong id="d">--</strong></span>
+    <span>Hours: <strong id="h">--</strong></span>
+    <span>Min: <strong id="m">--</strong></span>
+    <span>Sec: <strong id="s">--</strong></span>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Countdown Timer</h2>
+<p>Count down to any date and time. Free online countdown timer for events and deadlines.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+let timerId=null;
+function startCountdown(){if(timerId)clearInterval(timerId);updateCountdown();timerId=setInterval(updateCountdown,1000)}
+function updateCountdown(){const t=new Date(document.getElementById('target').value);if(isNaN(t)){document.getElementById('result').textContent='Invalid date';return}const now=new Date();let diff=t-now;if(diff<0){document.getElementById('result').textContent='Time has passed!';document.getElementById('d').textContent='0';document.getElementById('h').textContent='0';document.getElementById('m').textContent='0';document.getElementById('s').textContent='0';return}const d=Math.floor(diff/86400000);const h=Math.floor((diff%86400000)/3600000);const m=Math.floor((diff%3600000)/60000);const s=Math.floor((diff%60000)/1000);document.getElementById('result').textContent=d+'d '+h+'h '+m+'m '+s+'s';document.getElementById('d').textContent=d;document.getElementById('h').textContent=h;document.getElementById('m').textContent=m;document.getElementById('s').textContent=s}
+startCountdown();
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quadratic Equation Solver - Free Online Tool | ToolHub</title>
+<meta name="description" content="Solve quadratic equations ax^2 + bx + c = 0. Free online quadratic formula calculator with steps.">
+<meta name="keywords" content="quadratic equation solver, quadratic formula, quadratic calculator, solve quadratic, discriminant">
+<meta property="og:title" content="Quadratic Equation Solver">
+<meta property="og:description" content="Solve quadratic equations ax^2 + bx + c = 0. Free online quadratic formula calculator with steps.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/quadratic-equation-solver.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/quadratic-equation-solver.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Quadratic Equation Solver", "applicationCategory": "Math Calculators", "operatingSystem": "Any (web browser)", "description": "Solve quadratic equations ax^2 + bx + c = 0. Free online quadratic formula calculator with steps.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/quadratic-equation-solver.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-math-calculators">Math Calculators</a> <span class="sep">&rsaquo;</span> Quadratic Equation Solver</div>
+  <h1>Quadratic Equation Solver</h1>
+  <p class="subtitle">Solve quadratic equations ax^2 + bx + c = 0. Free online quadratic formula calculator with steps.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>a (x^2)</label><input type="number" id="a" value="1" step="any" oninput="calcQuad()"></div>
+  <div class="input-group"><label>b (x)</label><input type="number" id="b" value="-3" step="any" oninput="calcQuad()"></div>
+  <div class="input-group"><label>c</label><input type="number" id="c" value="2" step="any" oninput="calcQuad()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Solutions</div>
+  <div class="value" id="result">x = 2, x = -1</div>
+  <div style="margin-top:8px;font-size:14px;color:var(--text-soft)">Discriminant: <strong id="disc">1</strong></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Quadratic Equation Solver</h2>
+<p>Solve quadratic equations ax^2 + bx + c = 0. Free online quadratic formula calculator with steps.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcQuad(){const a=parseFloat(document.getElementById('a').value)||0;const b=parseFloat(document.getElementById('b').value)||0;const c=parseFloat(document.getElementById('c').value)||0;if(a===0){document.getElementById('result').textContent='a cannot be 0';return}const disc=b*b-4*a*c;document.getElementById('disc').textContent=disc.toFixed(4);if(disc<0){const re=-b/(2*a);const im=Math.sqrt(-disc)/(2*a);document.getElementById('result').textContent='x = '+re.toFixed(4)+' + '+im.toFixed(4)+'i, x = '+re.toFixed(4)+' - '+im.toFixed(4)+'i'}else if(disc===0){const x=-b/(2*a);document.getElementById('result').textContent='x = '+x.toFixed(4)+' (double root)'}else{const x1=(-b+Math.sqrt(disc))/(2*a);const x2=(-b-Math.sqrt(disc))/(2*a);document.getElementById('result').textContent='x = '+x1.toFixed(4)+', x = '+x2.toFixed(4)}}
+calcQuad();
+</script>
+</body>
+</html>

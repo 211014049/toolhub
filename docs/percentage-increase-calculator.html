@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Percentage Increase Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate percentage increase or decrease between two values. Free online percent change calculator.">
+<meta name="keywords" content="percentage increase calculator, percent change, percentage decrease, percent difference, growth rate">
+<meta property="og:title" content="Percentage Increase Calculator">
+<meta property="og:description" content="Calculate percentage increase or decrease between two values. Free online percent change calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/percentage-increase-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/percentage-increase-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Percentage Increase Calculator", "applicationCategory": "Math Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate percentage increase or decrease between two values. Free online percent change calculator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/percentage-increase-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-math-calculators">Math Calculators</a> <span class="sep">&rsaquo;</span> Percentage Increase Calculator</div>
+  <h1>Percentage Increase Calculator</h1>
+  <p class="subtitle">Calculate percentage increase or decrease between two values. Free online percent change calculator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Original Value</label><input type="number" id="original" value="100" oninput="calcPctInc()"></div>
+  <div class="input-group"><label>New Value</label><input type="number" id="newval" value="150" oninput="calcPctInc()"></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Percentage Change</div>
+  <div class="value" id="result">+50%</div>
+  <div style="margin-top:8px;font-size:14px;color:var(--text-soft)">Change: <strong id="change">+50</strong></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Percentage Increase Calculator</h2>
+<p>Calculate percentage increase or decrease between two values. Free online percent change calculator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcPctInc(){const o=parseFloat(document.getElementById('original').value)||0;const n=parseFloat(document.getElementById('newval').value)||0;if(o!==0){const pct=(n-o)/o*100;const sign=pct>=0?'+':'';document.getElementById('result').textContent=sign+pct.toFixed(2)+'%';document.getElementById('change').textContent=sign+(n-o).toFixed(2)}}
+calcPctInc();
+</script>
+</body>
+</html>

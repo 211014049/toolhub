@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calorie Calculator - Free Online Tool | ToolHub</title>
+<meta name="description" content="Calculate daily calorie needs (TDEE) based on age, weight, height and activity level. Free online calorie calculator.">
+<meta name="keywords" content="calorie calculator, tdee calculator, daily calorie needs, bmr calculator, maintenance calories">
+<meta property="og:title" content="Calorie Calculator">
+<meta property="og:description" content="Calculate daily calorie needs (TDEE) based on age, weight, height and activity level. Free online calorie calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/calorie-calculator.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/calorie-calculator.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Calorie Calculator", "applicationCategory": "Health Calculators", "operatingSystem": "Any (web browser)", "description": "Calculate daily calorie needs (TDEE) based on age, weight, height and activity level. Free online calorie calculator.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/calorie-calculator.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-health-calculators">Health Calculators</a> <span class="sep">&rsaquo;</span> Calorie Calculator</div>
+  <h1>Calorie Calculator</h1>
+  <p class="subtitle">Calculate daily calorie needs (TDEE) based on age, weight, height and activity level. Free online calorie calculator.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Age</label><input type="number" id="age" value="25" oninput="calcCal()"></div>
+  <div class="input-group"><label>Gender</label><select id="gender" onchange="calcCal()"><option value="male">Male</option><option value="female">Female</option></select></div>
+</div>
+<div class="tool-row">
+  <div class="input-group"><label>Weight (kg)</label><input type="number" id="weight" value="70" oninput="calcCal()"></div>
+  <div class="input-group"><label>Height (cm)</label><input type="number" id="height" value="170" oninput="calcCal()"></div>
+</div>
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Activity Level</label>
+    <select id="activity" onchange="calcCal()">
+      <option value="1.2">Sedentary (little or no exercise)</option>
+      <option value="1.375">Lightly active (1-3 days/week)</option>
+      <option value="1.55" selected>Moderately active (3-5 days/week)</option>
+      <option value="1.725">Very active (6-7 days/week)</option>
+      <option value="1.9">Extra active (physical job)</option>
+    </select>
+  </div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Daily Calories (TDEE)</div>
+  <div class="value" id="tdee">2,414</div>
+  <div style="display:flex;gap:24px;margin-top:8px;font-size:14px;color:var(--text-soft)">
+    <span>BMR: <strong id="bmr">1,557</strong></span>
+    <span>Lose Weight: <strong id="lose">1,914</strong></span>
+    <span>Gain Weight: <strong id="gain">2,914</strong></span>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Calorie Calculator</h2>
+<p>Calculate daily calorie needs (TDEE) based on age, weight, height and activity level. Free online calorie calculator.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function calcCal(){const age=parseInt(document.getElementById('age').value)||0;const wt=parseFloat(document.getElementById('weight').value)||0;const ht=parseFloat(document.getElementById('height').value)||0;const g=document.getElementById('gender').value;const a=parseFloat(document.getElementById('activity').value);let bmr;if(g==='male')bmr=10*wt+6.25*ht-5*age+5;else bmr=10*wt+6.25*ht-5*age-161;const tdee=bmr*a;document.getElementById('bmr').textContent=Math.round(bmr).toLocaleString();document.getElementById('tdee').textContent=Math.round(tdee).toLocaleString();document.getElementById('lose').textContent=Math.round(tdee*0.79).toLocaleString();document.getElementById('gain').textContent=Math.round(tdee*1.21).toLocaleString()}
+calcCal();
+</script>
+</body>
+</html>

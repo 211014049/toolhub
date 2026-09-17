@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Picker - Free Online Tool | ToolHub</title>
+<meta name="description" content="Pick colors and get HEX, RGB and HSL values. Free online color picker tool.">
+<meta name="keywords" content="color picker, color selector, pick color, hex color picker, rgb color picker">
+<meta property="og:title" content="Color Picker">
+<meta property="og:description" content="Pick colors and get HEX, RGB and HSL values. Free online color picker tool.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/color-picker.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/color-picker.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Color Picker", "applicationCategory": "Color Tools", "operatingSystem": "Any (web browser)", "description": "Pick colors and get HEX, RGB and HSL values. Free online color picker tool.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/color-picker.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-color-tools">Color Tools</a> <span class="sep">&rsaquo;</span> Color Picker</div>
+  <h1>Color Picker</h1>
+  <p class="subtitle">Pick colors and get HEX, RGB and HSL values. Free online color picker tool.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group"><label>Color Picker</label><input type="color" id="picker" value="#3366ff" oninput="updateColor()"></div>
+  <div class="input-group"><label>HEX</label><input type="text" id="hex" value="#3366ff" oninput="fromHex()"></div>
+</div>
+<div style="display:flex;gap:16px;margin-top:16px;align-items:center">
+  <div id="preview" style="width:120px;height:60px;border-radius:8px;border:2px solid var(--border);background:#3366ff"></div>
+  <div style="flex:1">
+    <div style="padding:4px 0">RGB: <strong id="rgb">51, 102, 255</strong></div>
+    <div style="padding:4px 0">HSL: <strong id="hsl">225&deg;, 100%, 60%</strong></div>
+    <div style="padding:4px 0">HEX: <strong id="hexval">#3366ff</strong></div>
+  </div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Color Picker</h2>
+<p>Pick colors and get HEX, RGB and HSL values. Free online color picker tool.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function updateColor(){const hex=document.getElementById('picker').value;document.getElementById('hex').value=hex;displayColor(hex)}
+function fromHex(){let h=document.getElementById('hex').value;if(!h.startsWith('#'))h='#'+h;if(/^#[0-9a-fA-F]{6}$/.test(h)){document.getElementById('picker').value=h;displayColor(h)}}
+function displayColor(hex){const r=parseInt(hex.substr(1,2),16);const g=parseInt(hex.substr(3,2),16);const b=parseInt(hex.substr(5,2),16);document.getElementById('preview').style.background=hex;document.getElementById('hexval').textContent=hex.toUpperCase();document.getElementById('rgb').textContent=r+', '+g+', '+b;const r1=r/255,g1=g/255,b1=b/255;const max=Math.max(r1,g1,b1),min=Math.min(r1,g1,b1);let h,s,l=(max+min)/2;if(max===min){h=0;s=0}else{const d=max-min;s=l>0.5?d/(2-max-min):d/(max+min);switch(max){case r1:h=(g1-b1)/d+(g1<b1?6:0);break;case g1:h=(b1-r1)/d+2;break;case b1:h=(r1-g1)/d+4;break}h=h/6}document.getElementById('hsl').textContent=Math.round(h*360)+'°, '+Math.round(s*100)+'%, '+Math.round(l*100)+'%'}
+updateColor();
+</script>
+</body>
+</html>

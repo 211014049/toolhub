@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markdown to HTML Converter - Free Online Tool | ToolHub</title>
+<meta name="description" content="Convert Markdown text to HTML. Free online Markdown to HTML converter with live preview.">
+<meta name="keywords" content="markdown to html, markdown converter, md to html, markdown preview, markdown editor">
+<meta property="og:title" content="Markdown to HTML Converter">
+<meta property="og:description" content="Convert Markdown text to HTML. Free online Markdown to HTML converter with live preview.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://211014049.github.io/toolhub/markdown-to-html.html">
+<link rel="canonical" href="https://211014049.github.io/toolhub/markdown-to-html.html">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Markdown to HTML Converter", "applicationCategory": "Text Tools", "operatingSystem": "Any (web browser)", "description": "Convert Markdown text to HTML. Free online Markdown to HTML converter with live preview.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://211014049.github.io/toolhub/markdown-to-html.html"}</script>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Tool<span>Hub</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search tools..." id="search-input">
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/#category-text-tools">Text Tools</a> <span class="sep">&rsaquo;</span> Markdown to HTML Converter</div>
+  <h1>Markdown to HTML Converter</h1>
+  <p class="subtitle">Convert Markdown text to HTML. Free online Markdown to HTML converter with live preview.</p>
+  <div class="ad-slot"></div>
+  <div class="tool-card">
+
+<div class="tool-row">
+  <div class="input-group" style="flex:1 1 100%"><label>Markdown Input</label><textarea id="input" placeholder="# Hello World&#10;&#10;This is **bold** and *italic*.&#10;&#10;- Item 1&#10;- Item 2" oninput="convert()"># Hello World
+
+This is **bold** and *italic*.
+
+- Item 1
+- Item 2</textarea></div>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">HTML Output</div>
+  <pre id="output" style="white-space:pre-wrap;word-break:break-all;font-family:'Courier New',monospace;font-size:13px;margin:0;color:var(--text)"></pre>
+</div>
+<div class="result-box show" style="display:block;margin-top:16px">
+  <div class="label">Preview</div>
+  <div id="preview" style="padding:12px"></div>
+</div>
+
+  </div>
+  <div class="info-section">
+<h2>About Markdown to HTML Converter</h2>
+<p>Convert Markdown text to HTML. Free online Markdown to HTML converter with live preview.</p>
+<p>This tool runs entirely in your browser. Your data is never sent to any server, ensuring complete privacy and security.</p>
+  </div>
+  <div class="related"><h2>Related Tools</h2><div class="related-grid"><a href="percentage-calculator.html">Percentage Calculator</a><a href="bmi-calculator.html">BMI Calculator</a><a href="age-calculator.html">Age Calculator</a><a href="tip-calculator.html">Tip Calculator</a></div></div>
+  <div class="ad-slot"></div>
+</div>
+<footer>
+  <p>ToolHub &mdash; Free Online Tools | <a href="/">All Tools</a></p>
+  <p>&copy; 2026 ToolHub. All tools run in your browser. No data sent to servers.</p>
+</footer>
+<script src="/static/app.js"></script>
+<script>
+function convert(){let md=document.getElementById('input').value;let html=md;html=html.replace(/^### (.+)$/gm,'<h3>$1</h3>');html=html.replace(/^## (.+)$/gm,'<h2>$1</h2>');html=html.replace(/^# (.+)$/gm,'<h1>$1</h1>');html=html.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');html=html.replace(/\*(.+?)\*/g,'<em>$1</em>');html=html.replace(/^- (.+)$/gm,'<li>$1</li>');html=html.replace(/(<li>.*<\/li>)/s,'<ul>$1</ul>');html=html.replace(/^(?!<[hul])(.+)/gm,'<p>$1</p>');document.getElementById('output').textContent=html;document.getElementById('preview').innerHTML=html}
+convert();
+</script>
+</body>
+</html>
